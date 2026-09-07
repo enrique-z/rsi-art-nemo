@@ -1,0 +1,2 @@
+586b99f060bfe457f359aa8b4bae1a299fa4e8c7
+source=https://github.com/aibasel/pyperplan.git benchmarks/

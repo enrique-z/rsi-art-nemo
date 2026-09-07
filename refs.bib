@@ -1,0 +1,644 @@
+% refs.bib — nemo-plan-repair-coverage
+%
+% Verification policy (see ../PLAYBOOK.md §5):
+%   1. Every entry verified live against arXiv API, Crossref, or Semantic Scholar.
+%   2. Author lists fetched directly from the source — NOT copied from memory.
+%   3. DOI or eprint present for every entry.
+%   4. Special characters ASCII-escaped; no bare % in url fields.
+%   5. Verification date and source logged in lit/VERIFICATION_LOG.md.
+%
+% Last verified: 2026-09-07
+
+% -----------------------------------------------------------------------
+% I. RECURSIVE SELF-IMPROVEMENT / SELF-CORRECTION LOOPS
+% -----------------------------------------------------------------------
+
+@inproceedings{madaan2023selfrefine,
+  title     = {Self-Refine: Iterative Refinement with Self-Feedback},
+  author    = {Madaan, Aman and Tandon, Niket and Gupta, Prakhar and
+               Hallinan, Skyler and Gao, Luyu and Wiegreffe, Sarah and
+               Alon, Uri and Dziri, Nouha and Prabhumoye, Shrimai and
+               Yang, Yiming and Gupta, Shashank and
+               Majumder, Bodhisattwa Prasad and Hermann, Katherine and
+               Welleck, Sean and Yazdanbakhsh, Amir and Clark, Peter},
+  booktitle = {Advances in Neural Information Processing Systems},
+  volume    = {36},
+  year      = {2023},
+  eprint    = {2303.17651},
+  archivePrefix = {arXiv},
+}
+
+@inproceedings{shinn2023reflexion,
+  title     = {Reflexion: Language Agents with Verbal Reinforcement Learning},
+  author    = {Shinn, Noah and Cassano, Federico and Berman, Edward and
+               Gopinath, Ashwin and Narasimhan, Karthik and Yao, Shunyu},
+  booktitle = {Advances in Neural Information Processing Systems},
+  volume    = {36},
+  year      = {2023},
+  eprint    = {2303.11366},
+  archivePrefix = {arXiv},
+}
+
+@article{huang2023llmcantcorrect,
+  title     = {Large Language Models Cannot Self-Correct Reasoning Yet},
+  author    = {Huang, Jie and Chen, Xinyun and Mishra, Swaroop and
+               Zheng, Huaixiu Steven and Yu, Adams Wei and
+               Song, Xinying and Zhou, Denny},
+  journal   = {arXiv preprint},
+  year      = {2023},
+  eprint    = {2310.01798},
+  archivePrefix = {arXiv},
+}
+
+@article{li2025decompose,
+  title     = {Decomposing LLM Self-Correction: The Accuracy-Correction Paradox
+               and Error Depth Hypothesis},
+  author    = {Li, Yin},
+  journal   = {arXiv preprint},
+  year      = {2025},
+  eprint    = {2601.00828},
+  archivePrefix = {arXiv},
+}
+
+@article{yang2023optimizers,
+  title     = {Large Language Models as Optimizers},
+  author    = {Yang, Chengrun and Wang, Xuezhi and Lu, Yifeng and
+               Liu, Hanxiao and Le, Quoc V. and Zhou, Denny and
+               Chen, Xinyun},
+  journal   = {arXiv preprint},
+  year      = {2023},
+  eprint    = {2309.03409},
+  archivePrefix = {arXiv},
+}
+
+@inproceedings{wang2023voyager,
+  title     = {Voyager: An Open-Ended Embodied Agent with Large Language Models},
+  author    = {Wang, Guanzhi and Xie, Yuqi and Jiang, Yunfan and
+               Mandlekar, Ajay and Xiao, Chaowei and Zhu, Yuke and
+               Fan, Linxi and Anandkumar, Anima},
+  booktitle = {Advances in Neural Information Processing Systems},
+  volume    = {36},
+  year      = {2023},
+  eprint    = {2305.16291},
+  archivePrefix = {arXiv},
+}
+
+% -----------------------------------------------------------------------
+% II. VERIFIER / PROCESS REWARD MODEL QUALITY
+% -----------------------------------------------------------------------
+
+@article{lightman2023verify,
+  title     = {Let's Verify Step by Step},
+  author    = {Lightman, Hunter and Kosaraju, Vineet and Burda, Yura and
+               Edwards, Harri and Baker, Bowen and Lee, Teddy and
+               Leike, Jan and Schulman, John and Sutskever, Ilya and
+               Cobbe, Karl},
+  journal   = {arXiv preprint},
+  year      = {2023},
+  eprint    = {2305.20050},
+  archivePrefix = {arXiv},
+}
+
+@article{uesato2022process,
+  title     = {Solving math word problems with process- and outcome-based feedback},
+  author    = {Uesato, Jonathan and Kushman, Nate and Kumar, Ramana and
+               Song, Francis and Siegel, Noah and Wang, Lisa and
+               Creswell, Antonia and Irving, Geoffrey and Higgins, Irina},
+  journal   = {arXiv preprint},
+  year      = {2022},
+  eprint    = {2211.14275},
+  archivePrefix = {arXiv},
+}
+
+@article{brown2024monkeys,
+  title     = {Large Language Monkeys: Scaling Inference Compute with
+               Repeated Sampling},
+  author    = {Brown, Bradley and Juravsky, Jordan and Ehrlich, Ryan and
+               Clark, Ronald and Le, Quoc V. and Ré, Christopher and
+               Mirhoseini, Azalia},
+  journal   = {arXiv preprint},
+  year      = {2024},
+  eprint    = {2407.21787},
+  archivePrefix = {arXiv},
+}
+
+% -----------------------------------------------------------------------
+% III. LLM + SYMBOLIC PLANNING / PDDL WITH VERIFIER FEEDBACK
+% -----------------------------------------------------------------------
+
+@inproceedings{guan2023leveraging,
+  title     = {Leveraging Pre-trained Large Language Models to Construct and
+               Utilize World Models for Model-based Task Planning},
+  author    = {Guan, Lin and Valmeekam, Karthik and Sreedharan, Sarath and
+               Kambhampati, Subbarao},
+  booktitle = {Advances in Neural Information Processing Systems 36},
+  year      = {2023},
+  doi       = {10.52202/075280-3459},
+  eprint    = {2305.14909},
+  archivePrefix = {arXiv},
+}
+
+@inproceedings{valmeekam2023planning,
+  title     = {On the Planning Abilities of Large Language Models ---
+               {A} Critical Investigation},
+  author    = {Valmeekam, Karthik and Marquez, Matthew and
+               Sreedharan, Sarath and Kambhampati, Subbarao},
+  booktitle = {Advances in Neural Information Processing Systems 36},
+  year      = {2023},
+  doi       = {10.52202/075280-3320},
+}
+
+@inproceedings{valmeekam2023planbench,
+  title     = {{PlanBench}: An Extensible Benchmark for Evaluating Large
+               Language Models on Planning and Reasoning about Change},
+  author    = {Valmeekam, Karthik and Marquez, Matthew and Olmo, Alberto and
+               Sreedharan, Sarath and Kambhampati, Subbarao},
+  booktitle = {Advances in Neural Information Processing Systems 36},
+  year      = {2023},
+  doi       = {10.52202/075280-1693},
+}
+
+@inproceedings{stechly2024chain,
+  title     = {Chain of Thoughtlessness? {An} Analysis of {CoT} in Planning},
+  author    = {Stechly, Kaya and Valmeekam, Karthik and Kambhampati, Subbarao},
+  booktitle = {Advances in Neural Information Processing Systems 37},
+  year      = {2024},
+  doi       = {10.52202/079017-0917},
+}
+
+@inproceedings{silver2024generalized,
+  title     = {Generalized Planning in {PDDL} Domains with Pretrained Large
+               Language Models},
+  author    = {Silver, Tom and Dan, Soham and Srinivas, Kavitha and
+               Tenenbaum, Joshua B. and Kaelbling, Leslie and Katz, Michael},
+  booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume    = {38},
+  number    = {18},
+  year      = {2024},
+  doi       = {10.1609/aaai.v38i18.30006},
+}
+
+@inproceedings{chu2025llmmap,
+  title     = {{LLM+MAP}: Bimanual Robot Task Planning using Large Language
+               Models and Planning Domain Definition Language},
+  author    = {Chu, Kun and Zhao, Xufeng and Weber, Cornelius and Wermter, Stefan},
+  booktitle = {arXiv preprint},
+  year      = {2025},
+  eprint    = {2503.17309},
+  archivePrefix = {arXiv},
+}
+
+% -----------------------------------------------------------------------
+% IV. PLAN REPAIR / PLAN REUSE
+% -----------------------------------------------------------------------
+
+@article{li2025planreuse,
+  title     = {A Plan Reuse Mechanism for {LLM}-Driven Agent},
+  author    = {Li, Guopeng and Wu, Ruiqi and Tan, Haisheng},
+  journal   = {arXiv preprint},
+  year      = {2025},
+  eprint    = {2512.21309},
+  archivePrefix = {arXiv},
+}
+
+% -----------------------------------------------------------------------
+% V. BEHAVIOR TREES: SYNTHESIS AND VERIFICATION
+% -----------------------------------------------------------------------
+
+@book{colledanchise2018bt,
+  title     = {Behavior Trees in Robotics and {AI}: An Introduction},
+  author    = {Colledanchise, Michele and Ögren, Petter},
+  publisher = {CRC Press},
+  year      = {2018},
+  doi       = {10.1201/9780429489105},
+}
+
+@article{colledanchise2021impl,
+  title     = {On the Implementation of Behavior Trees in Robotics},
+  author    = {Colledanchise, Michele and Natale, Lorenzo},
+  journal   = {{IEEE} Robotics and Automation Letters},
+  year      = {2021},
+  doi       = {10.1109/lra.2021.3087442},
+}
+
+@inproceedings{colledanchise2019blended,
+  title     = {Towards Blended Reactive Planning and Acting using Behavior Trees},
+  author    = {Colledanchise, Michele and Almeida, Diogo and Ogren, Petter},
+  booktitle = {2019 International Conference on Robotics and Automation ({ICRA})},
+  year      = {2019},
+  doi       = {10.1109/icra.2019.8794128},
+}
+
+@inproceedings{serbinowska2022behaverify,
+  title     = {{BehaVerify}: Verifying Temporal Logic Specifications for
+               Behavior Trees},
+  author    = {Serbinowska, Serena Serafina and Johnson, Taylor T.},
+  booktitle = {Software Engineering and Formal Methods ({SEFM})},
+  series    = {Lecture Notes in Computer Science},
+  year      = {2022},
+  doi       = {10.1007/978-3-031-17108-6_19},
+}
+
+@article{serbinowska2024stateful,
+  title     = {Formalizing Stateful Behavior Trees},
+  author    = {Serbinowska, Serena S. and Robinette, Preston and
+               Karsai, Gabor and Johnson, Taylor T.},
+  journal   = {Electronic Proceedings in Theoretical Computer Science},
+  volume    = {411},
+  year      = {2024},
+  doi       = {10.4204/eptcs.411.14},
+}
+
+@article{safronov2020task,
+  title     = {Task Planning with Belief Behavior Trees},
+  author    = {Safronov, Evgenii and Colledanchise, Michele and Natale, Lorenzo},
+  journal   = {arXiv preprint},
+  year      = {2020},
+  eprint    = {2008.09393},
+  archivePrefix = {arXiv},
+}
+
+@inproceedings{izzo2024btgenbot,
+  title     = {{BTGenBot}: Behavior Tree Generation for Robotic Tasks with
+               Lightweight {LLMs}},
+  author    = {Izzo, Riccardo Andrea and Bardaro, Gianluca and Matteucci, Matteo},
+  booktitle = {arXiv preprint},
+  year      = {2024},
+  eprint    = {2403.12761},
+  archivePrefix = {arXiv},
+}
+
+
+@inproceedings{cao2023robot,
+  title     = {Robot Behavior-Tree-Based Task Generation with Large Language Models},
+  author    = {Cao, Yue and Lee, C. S. George},
+  booktitle = {arXiv preprint},
+  year      = {2023},
+  eprint    = {2302.12927},
+  archivePrefix = {arXiv},
+}
+
+@article{tian2025llmcbt,
+  title     = {{LLM-CBT}: {LLM}-Driven Closed-Loop Behavior Tree Planning for
+               Heterogeneous {UAV-UGV} Swarm Collaboration},
+  author    = {Tian, Yuanyuan and Song, Weilong and Fu, Jinna and Li, Zhenhui and
+               Fang, Chenyu and Wang, Linbo and Hu, Wanyang and Liu, Yabo},
+  booktitle = {2025 IEEE/RSJ International Conference on Intelligent Robots and
+               Systems ({IROS})},
+  year      = {2025},
+  doi       = {10.1109/iros60139.2025.11246793},
+}
+
+@article{merino2025btrobot,
+  title     = {Behavior tree generation and adaptation for a social robot
+               control with {LLMs}},
+  author    = {Merino-Fidalgo, Sergio and {Sánchez-Girón}, Celia and
+               Zalama, Eduardo and {Gómez-García-Bermejo}, Jaime and
+               Duque-Domingo, Jaime},
+  journal   = {Robotics and Autonomous Systems},
+  year      = {2025},
+  doi       = {10.1016/j.robot.2025.105165},
+}
+
+% -----------------------------------------------------------------------
+% VI. NEURO-SYMBOLIC EMBODIED AGENTS / GROUNDED EXECUTION
+% -----------------------------------------------------------------------
+
+@inproceedings{ahn2022saycan,
+  title     = {Do As {I} Can, Not As {I} Say: Grounding Language in Robotic
+               Affordances},
+  author    = {Ahn, Michael and Brohan, Anthony and Brown, Noah and Chebotar, Yevgen and Cortes, Omar and David, Byron and Finn, Chelsea and Fu, Chuyuan and Gopalakrishnan, Keerthana and Hausman, Karol and Herzog, Alex and Ho, Daniel and Hsu, Jasmine and Ibarz, Julian and Ichter, Brian and Irpan, Alex and Jang, Eric and Ruano, Rosario Jauregui and Jeffrey, Kyle and Jesmonth, Sally and Joshi, Nikhil J and Julian, Ryan and Kalashnikov, Dmitry and Kuang, Yuheng and Lee, Kuang-Huei and Levine, Sergey and Lu, Yao and Luu, Linda and Parada, Carolina and Pastor, Peter and Quiambao, Jornell and Rao, Kanishka and Rettinghouse, Jarek and Reyes, Diego and Sermanet, Pierre and Sievers, Nicolas and Tan, Clayton and Toshev, Alexander and Vanhoucke, Vincent and Xia, Fei and Xiao, Ted and Xu, Peng and Xu, Sichun and Yan, Mengyuan and Zeng, Andy},
+  booktitle = {arXiv preprint},
+  year      = {2022},
+  eprint    = {2204.01691},
+  archivePrefix = {arXiv},
+}
+
+@inproceedings{huang2022inner,
+  title     = {Inner Monologue: Embodied Reasoning through Planning with
+               Language Models},
+  author    = {Huang, Wenlong and Xia, Fei and Xiao, Ted and Chan, Harris and Liang, Jacky and Florence, Pete and Zeng, Andy and Tompson, Jonathan and Mordatch, Igor and Chebotar, Yevgen and Sermanet, Pierre and Brown, Noah and Jackson, Tomas and Luu, Linda and Levine, Sergey and Hausman, Karol and Ichter, Brian},
+  booktitle = {arXiv preprint},
+  year      = {2022},
+  eprint    = {2207.05608},
+  archivePrefix = {arXiv},
+}
+
+@inproceedings{liang2023code,
+  title     = {Code as Policies: Language Model Programs for Embodied Control},
+  author    = {Liang, Jacky and Huang, Wenlong and Xia, Fei and Xu, Peng and
+               Hausman, Karol and Ichter, Brian and Florence, Pete and
+               Zeng, Andy},
+  booktitle = {2023 IEEE International Conference on Robotics and Automation ({ICRA})},
+  year      = {2023},
+  eprint    = {2209.07753},
+  archivePrefix = {arXiv},
+}
+
+@inproceedings{rana2023sayplan,
+  title     = {{SayPlan}: Grounding Large Language Models using {3D} Scene
+               Graphs for Scalable Robot Task Planning},
+  author    = {Rana, Krishan and Haviland, Jesse and Garg, Sourav and
+               Abou-Chakra, Jad and Reid, Ian and Suenderhauf, Niko},
+  booktitle = {arXiv preprint},
+  year      = {2023},
+  eprint    = {2307.06135},
+  archivePrefix = {arXiv},
+}
+
+@inproceedings{bhat2024grounding,
+  title     = {Grounding {LLMs} for Robot Task Planning Using Closed-loop
+               State Feedback},
+  author    = {Bhat, Vineet and Kaypak, Ali Umut and Krishnamurthy, Prashanth and
+               Karri, Ramesh and Khorrami, Farshad},
+  booktitle = {arXiv preprint},
+  year      = {2024},
+  eprint    = {2402.08546},
+  archivePrefix = {arXiv},
+}
+
+@inproceedings{singh2023progprompt,
+  title     = {{ProgPrompt}: Generating Situated Robot Task Plans using Large
+               Language Models},
+  author    = {Singh, Ishika and Blukis, Valts and Mousavian, Arsalan and
+               Goyal, Ankit and Xu, Danfei and Tremblay, Jonathan and
+               Fox, Dieter and Thomason, Jesse and Garg, Animesh},
+  booktitle = {2023 IEEE International Conference on Robotics and Automation ({ICRA})},
+  year      = {2023},
+  doi       = {10.1007/s10514-023-10135-3},
+  eprint    = {2209.11302},
+  archivePrefix = {arXiv},
+}
+
+@article{guo2023tamp,
+  title     = {Recent Trends in Task and Motion Planning for Robotics:
+               {A} Survey},
+  author    = {Guo, Huihui and Wu, Fan and Qin, Yunchuan and Li, Ruihui and
+               Li, Keqin and Li, Kenli},
+  journal   = {{ACM} Computing Surveys},
+  year      = {2023},
+  doi       = {10.1145/3583136},
+}
+
+% -----------------------------------------------------------------------
+% VII. LLM AGENTS: REASONING, ACTING, PLANNING FOUNDATIONS
+% -----------------------------------------------------------------------
+
+@inproceedings{yao2023react,
+  title     = {{ReAct}: Synergizing Reasoning and Acting in Language Models},
+  author    = {Yao, Shunyu and Zhao, Jeffrey and Yu, Dian and Du, Nan and
+               Shafran, Izhak and Narasimhan, Karthik and Cao, Yuan},
+  booktitle = {arXiv preprint},
+  year      = {2023},
+  eprint    = {2210.03629},
+  archivePrefix = {arXiv},
+}
+
+@inproceedings{wei2022chain,
+  title     = {Chain-of-Thought Prompting Elicits Reasoning in Large Language
+               Models},
+  author    = {Wei, Jason and Wang, Xuezhi and Schuurmans, Dale and
+               Bosma, Maarten and Ichter, Brian and Xia, Fei and Chi, Ed and
+               Le, Quoc V. and Zhou, Denny},
+  booktitle = {Advances in Neural Information Processing Systems},
+  volume    = {35},
+  year      = {2022},
+  eprint    = {2201.11903},
+  archivePrefix = {arXiv},
+}
+
+@inproceedings{wang2023deps,
+  title     = {Describe, Explain, Plan and Select: Interactive Planning with
+               Large Language Models Enables Open-World Multi-Task Agents},
+  author    = {Wang, Zihao and Cai, Shaofei and Chen, Guanzhou and Liu, Anji and
+               Ma, Xiaojian and Liang, Yitao},
+  booktitle = {Advances in Neural Information Processing Systems},
+  volume    = {36},
+  year      = {2023},
+  eprint    = {2302.01560},
+  archivePrefix = {arXiv},
+}
+
+@article{schick2023toolformer,
+  title     = {Toolformer: Language Models Can Teach Themselves to Use Tools},
+  author    = {Schick, Timo and Dwivedi-Yu, Jane and Dessì, Roberto and
+               Raileanu, Roberta and Lomeli, Maria and Zettlemoyer, Luke and
+               Cancedda, Nicola and Scialom, Thomas},
+  journal   = {arXiv preprint},
+  year      = {2023},
+  eprint    = {2302.04761},
+  archivePrefix = {arXiv},
+}
+
+@article{wang2024agentsurvey,
+  title     = {A survey on large language model based autonomous agents},
+  author    = {Wang, Lei and Ma, Chen and Feng, Xueyang and Zhang, Zeyu and
+               Yang, Hao and Zhang, Jingsen and Chen, Zhiyuan and Tang, Jiakai and
+               Chen, Xu and Lin, Yankai and Zhao, Wayne Xin and Wei, Zhewei and
+               Wen, Jirong},
+  journal   = {Frontiers of Computer Science},
+  year      = {2024},
+  doi       = {10.1007/s11704-024-40231-1},
+}
+
+% -----------------------------------------------------------------------
+% VIII. EVALUATION METHODOLOGY: STATISTICAL TESTING, PRE-REGISTRATION
+% -----------------------------------------------------------------------
+
+@inproceedings{dror2018hitchhiker,
+  title     = {The Hitchhiker's Guide to Testing Statistical Significance in
+               Natural Language Processing},
+  author    = {Dror, Rotem and Baumer, Gili and Shlomov, Segev and
+               Reichart, Roi},
+  booktitle = {Proceedings of the 56th Annual Meeting of the Association for
+               Computational Linguistics (Volume 1: Long Papers)},
+  year      = {2018},
+  doi       = {10.18653/v1/p18-1128},
+}
+
+% -----------------------------------------------------------------------
+% IX. ACTION-MODEL / DOMAIN-MODEL LEARNING FROM TRACES
+% -----------------------------------------------------------------------
+
+@article{yang2007arms,
+  title     = {Learning action models from plan examples using weighted {MAX-SAT}},
+  author    = {Yang, Qiang and Wu, Kangheng and Jiang, Yunfei},
+  journal   = {Artificial Intelligence},
+  year      = {2007},
+  doi       = {10.1016/j.artint.2006.11.005},
+}
+
+@article{aineto2019fama,
+  title     = {Learning action models with minimal observability},
+  author    = {Aineto, Diego and Jiménez Celorrio, Sergio and Onaindia, Eva},
+  journal   = {Artificial Intelligence},
+  year      = {2019},
+  doi       = {10.1016/j.artint.2019.05.003},
+}
+
+@article{aineto2022comprehensive,
+  title     = {A Comprehensive Framework for Learning Declarative Action Models},
+  author    = {Aineto, Diego and Jiménez, Sergio and Onaindia, Eva},
+  journal   = {Journal of Artificial Intelligence Research},
+  year      = {2022},
+  doi       = {10.1613/jair.1.13073},
+}
+
+@article{cresswell2013locm,
+  title     = {Acquiring planning domain models using {LOCM}},
+  author    = {Cresswell, Stephen N. and McCluskey, Thomas L. and West, Margaret M.},
+  journal   = {The Knowledge Engineering Review},
+  year      = {2013},
+  doi       = {10.1017/s0269888912000422},
+}
+
+@inproceedings{cresswell2011generalised,
+  title     = {Generalised Domain Model Acquisition from Action Traces},
+  author    = {Cresswell, Stephen and Gregory, Peter},
+  booktitle = {Proceedings of the 21st International Conference on Automated
+               Planning and Scheduling ({ICAPS})},
+  year      = {2011},
+  doi       = {10.1609/icaps.v21i1.13476},
+}
+
+% -----------------------------------------------------------------------
+% X. MODEL REPAIR AND RECONCILIATION
+% -----------------------------------------------------------------------
+
+@inproceedings{chakraborti2017reconciliation,
+  title     = {Plan Explanations as Model Reconciliation: Moving Beyond
+               Explanation as Soliloquy},
+  author    = {Chakraborti, Tathagata and Sreedharan, Sarath and
+               Zhang, Yu and Kambhampati, Subbarao},
+  booktitle = {Proceedings of the Twenty-Sixth International Joint Conference
+               on Artificial Intelligence ({IJCAI-17})},
+  year      = {2017},
+  doi       = {10.24963/ijcai.2017/23},
+}
+
+@inproceedings{sreedharan2018uncertainty,
+  title     = {Handling Model Uncertainty and Multiplicity in Explanations
+               via Model Reconciliation},
+  author    = {Sreedharan, Sarath and Chakraborti, Tathagata and
+               Kambhampati, Subbarao},
+  booktitle = {Proceedings of the 28th International Conference on Automated
+               Planning and Scheduling ({ICAPS})},
+  year      = {2018},
+  doi       = {10.1609/icaps.v28i1.13930},
+}
+
+@incollection{sreedharan2022reconciliation,
+  title     = {Explanation as Model Reconciliation},
+  author    = {Sreedharan, Sarath and Kulkarni, Anagha and Kambhampati, Subbarao},
+  booktitle = {Explainable Human-{AI} Interaction},
+  series    = {Synthesis Lectures on Artificial Intelligence and Machine Learning},
+  year      = {2022},
+  doi       = {10.1007/978-3-031-03767-2_5},
+}
+
+@inproceedings{gregory2016costs,
+  title     = {Domain Model Acquisition in Domains with Action Costs},
+  author    = {Gregory, Peter and Lindsay, Alan},
+  booktitle = {Proceedings of the 26th International Conference on Automated
+               Planning and Scheduling ({ICAPS})},
+  year      = {2016},
+  doi       = {10.1609/icaps.v26i1.13762},
+}
+
+@inproceedings{lindsay2020refining,
+  title     = {Refining Process Descriptions from Execution Data in Hybrid
+               Planning Domain Models},
+  author    = {Lindsay, Alan and Franco, Santiago and Reba, Rubiya and
+               McCluskey, Thomas L.},
+  booktitle = {Proceedings of the 30th International Conference on Automated
+               Planning and Scheduling ({ICAPS})},
+  year      = {2020},
+  doi       = {10.1609/icaps.v30i1.6742},
+}
+
+% -----------------------------------------------------------------------
+% XI. NEURO-SYMBOLIC WORLD MODELS / OPERATOR LEARNING
+% -----------------------------------------------------------------------
+
+@article{konidaris2018skills,
+  title     = {From Skills to Symbols: Learning Symbolic Representations for
+               Abstract High-Level Planning},
+  author    = {Konidaris, George and Kaelbling, Leslie Pack and
+               Lozano-Perez, Tomas},
+  journal   = {Journal of Artificial Intelligence Research},
+  year      = {2018},
+  doi       = {10.1613/jair.5575},
+}
+
+@inproceedings{chitnis2022nsrts,
+  title     = {Learning Neuro-Symbolic Relational Transition Models for
+               Bilevel Planning},
+  author    = {Chitnis, Rohan and Silver, Tom and Tenenbaum, Joshua B. and
+               Lozano-Pérez, Tomás and Kaelbling, Leslie Pack},
+  booktitle = {2022 {IEEE/RSJ} International Conference on Intelligent Robots
+               and Systems ({IROS})},
+  year      = {2022},
+  doi       = {10.1109/iros47612.2022.9981440},
+}
+
+% -----------------------------------------------------------------------
+% XII. PDDL TOOLING AND BENCHMARKS
+% -----------------------------------------------------------------------
+
+@article{helmert2006fastdownward,
+  title     = {The {Fast Downward} Planning System},
+  author    = {Helmert, Malte},
+  journal   = {Journal of Artificial Intelligence Research},
+  year      = {2006},
+  doi       = {10.1613/jair.1705},
+}
+
+@article{fox2003pddl21,
+  title     = {{PDDL2.1}: An Extension to {PDDL} for Expressing Temporal
+               Planning Domains},
+  author    = {Fox, Maria and Long, Derek},
+  journal   = {Journal of Artificial Intelligence Research},
+  year      = {2003},
+  doi       = {10.1613/jair.1129},
+}
+
+@inproceedings{howey2004val,
+  title     = {{VAL}: automatic plan validation, continuous effects and mixed
+               initiative planning using {PDDL}},
+  author    = {Howey, Richard and Long, Derek and Fox, Maria},
+  booktitle = {16th {IEEE} International Conference on Tools with Artificial
+               Intelligence ({ICTAI} 2004)},
+  year      = {2004},
+  doi       = {10.1109/ictai.2004.120},
+}
+
+% -----------------------------------------------------------------------
+% XIII. PARTIAL OBSERVABILITY / INCOMPLETE DOMAIN MODELS
+% -----------------------------------------------------------------------
+
+@inproceedings{weber2011incomplete,
+  title     = {Planning and Acting in Incomplete Domains},
+  author    = {Weber, Christopher and Bryce, Daniel},
+  booktitle = {Proceedings of the 21st International Conference on Automated
+               Planning and Scheduling ({ICAPS})},
+  year      = {2011},
+  doi       = {10.1609/icaps.v21i1.13463},
+}
+
+@inproceedings{nguyen2014heuristic,
+  title     = {A Heuristic Approach to Planning with Incomplete {STRIPS}
+               Action Models},
+  author    = {Nguyen, Tuan and Kambhampati, Subbarao},
+  booktitle = {Proceedings of the 24th International Conference on Automated
+               Planning and Scheduling ({ICAPS})},
+  year      = {2014},
+  doi       = {10.1609/icaps.v24i1.13635},
+}
+
+@article{nguyen2017robust,
+  title     = {Robust planning with incomplete domain models},
+  author    = {Nguyen, Tuan and Sreedharan, Sarath and Kambhampati, Subbarao},
+  journal   = {Artificial Intelligence},
+  year      = {2017},
+  doi       = {10.1016/j.artint.2016.12.003},
+}

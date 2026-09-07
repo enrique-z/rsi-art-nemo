@@ -1,0 +1,876 @@
+{
+  "ledger_rows": {
+    "llm::design::n_runs": {
+      "value": 40,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:1"
+    },
+    "llm::design::n_seeds": {
+      "value": 8,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:2"
+    },
+    "llm::design::n_domains": {
+      "value": 1,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:3"
+    },
+    "llm::design::runs_per_ck_cell": {
+      "value": 8,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:4"
+    },
+    "llm::design::proposer": {
+      "value": "llm",
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:5"
+    },
+    "llm::integrity::budget_exhausted_train": {
+      "value": 11,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:6"
+    },
+    "llm::integrity::budget_exhausted_eval": {
+      "value": 21,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:7"
+    },
+    "llm::integrity::no_plan_train": {
+      "value": 431,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:8"
+    },
+    "llm::integrity::no_plan_eval": {
+      "value": 456,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:9"
+    },
+    "llm::integrity::parse_failures": {
+      "value": 10,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:10"
+    },
+    "llm::integrity::empty_proposals": {
+      "value": 0,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:11"
+    },
+    "llm::integrity::llm_errors": {
+      "value": 0,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:12"
+    },
+    "llm::integrity::llm_calls": {
+      "value": 159,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:13"
+    },
+    "llm::integrity::no_proposal_rounds": {
+      "value": 1,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:14"
+    },
+    "llm::integrity::no_accept_rounds": {
+      "value": 119,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:15"
+    },
+    "llm::integrity::plan_calls": {
+      "value": 1600,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:16"
+    },
+    "llm::success::c0.2_k0": {
+      "value": 0.0,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:17"
+    },
+    "llm::success::c0.2_k1": {
+      "value": 0.0,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:18"
+    },
+    "llm::success::c0.2_k2": {
+      "value": 0.0,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:19"
+    },
+    "llm::success::c0.2_k4": {
+      "value": 0.0,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:20"
+    },
+    "llm::success::c0.4_k0": {
+      "value": 0.0,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:21"
+    },
+    "llm::success::c0.4_k1": {
+      "value": 0.0,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:22"
+    },
+    "llm::success::c0.4_k2": {
+      "value": 0.0,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:23"
+    },
+    "llm::success::c0.4_k4": {
+      "value": 0.0,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:24"
+    },
+    "llm::success::c0.6_k0": {
+      "value": 0.0,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:25"
+    },
+    "llm::success::c0.6_k1": {
+      "value": 0.0,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:26"
+    },
+    "llm::success::c0.6_k2": {
+      "value": 0.0,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:27"
+    },
+    "llm::success::c0.6_k4": {
+      "value": 0.0,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:28"
+    },
+    "llm::success::c0.8_k0": {
+      "value": 0.0,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:29"
+    },
+    "llm::success::c0.8_k1": {
+      "value": 0.0,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:30"
+    },
+    "llm::success::c0.8_k2": {
+      "value": 0.0,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:31"
+    },
+    "llm::success::c0.8_k4": {
+      "value": 0.125,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:32"
+    },
+    "llm::success::c1.0_k0": {
+      "value": 0.0,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:33"
+    },
+    "llm::success::c1.0_k1": {
+      "value": 0.0,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:34"
+    },
+    "llm::success::c1.0_k2": {
+      "value": 0.0,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:35"
+    },
+    "llm::success::c1.0_k4": {
+      "value": 0.0,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:36"
+    },
+    "llm::primary::interaction_coverage_x_k": {
+      "value": 0.0625,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:37"
+    },
+    "llm::primary::delta_k4_k1_high": {
+      "value": 0.0625,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:38"
+    },
+    "llm::primary::delta_k4_k1_low": {
+      "value": 0.0,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:39"
+    },
+    "llm::robustness::interaction_blocks": {
+      "value": 0.0625,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:40"
+    },
+    "llm::robustness::divergence_low_blocks": {
+      "value": 0.0,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:41"
+    },
+    "llm::robustness::divergence_high_blocks": {
+      "value": 0.0,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:42"
+    },
+    "llm::falsifier::divergence_events_low": {
+      "value": 0,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:43"
+    },
+    "llm::falsifier::divergence_transitions_low": {
+      "value": 48,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:44"
+    },
+    "llm::falsifier::divergence_events_high": {
+      "value": 0,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:45"
+    },
+    "llm::falsifier::divergence_transitions_high": {
+      "value": 48,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:46"
+    },
+    "llm::maineffect::coverage_at_k0": {
+      "value": 0.0,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:47"
+    },
+    "llm::maineffect::coverage_at_k1": {
+      "value": 0.0,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:48"
+    },
+    "llm::maineffect::coverage_at_k2": {
+      "value": 0.0,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:49"
+    },
+    "llm::maineffect::coverage_at_k4": {
+      "value": 0.0625,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:50"
+    },
+    "llm::success::k0_baseline_pooled": {
+      "value": 0.0,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:51"
+    },
+    "llm::falsifier::divergence_rate_high": {
+      "value": 0.0,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:52"
+    },
+    "llm::falsifier::divergence_rate_low": {
+      "value": 0.0,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:53"
+    },
+    "llm::falsifier::divergence_gap_high_minus_low": {
+      "value": 0.0,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:54"
+    },
+    "llm::editdist::high_k0": {
+      "value": 4.0,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:55"
+    },
+    "llm::editdist::high_k1": {
+      "value": 3.25,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:56"
+    },
+    "llm::editdist::high_k2": {
+      "value": 2.75,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:57"
+    },
+    "llm::editdist::high_k4": {
+      "value": 2.625,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:58"
+    },
+    "llm::editdist::low_k0": {
+      "value": 4.0,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:59"
+    },
+    "llm::editdist::low_k1": {
+      "value": 3.5,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:60"
+    },
+    "llm::editdist::low_k2": {
+      "value": 3.4375,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:61"
+    },
+    "llm::editdist::low_k4": {
+      "value": 3.4375,
+      "source": "nemo_plan_repair_coverage_llm_secondary_ledger.jsonl:62"
+    },
+    "n1::design::n_runs": {
+      "value": 100,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:1"
+    },
+    "n1::design::n_seeds": {
+      "value": 20,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:2"
+    },
+    "n1::design::n_domains": {
+      "value": 1,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:3"
+    },
+    "n1::design::runs_per_ck_cell": {
+      "value": 20,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:4"
+    },
+    "n1::design::proposer": {
+      "value": "deterministic",
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:5"
+    },
+    "n1::integrity::budget_exhausted_train": {
+      "value": 0,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:6"
+    },
+    "n1::integrity::budget_exhausted_eval": {
+      "value": 10,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:7"
+    },
+    "n1::integrity::no_plan_train": {
+      "value": 517,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:8"
+    },
+    "n1::integrity::no_plan_eval": {
+      "value": 584,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:9"
+    },
+    "n1::integrity::parse_failures": {
+      "value": 0,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:10"
+    },
+    "n1::integrity::empty_proposals": {
+      "value": 0,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:11"
+    },
+    "n1::integrity::llm_errors": {
+      "value": 0,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:12"
+    },
+    "n1::integrity::llm_calls": {
+      "value": 0,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:13"
+    },
+    "n1::integrity::no_proposal_rounds": {
+      "value": 267,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:14"
+    },
+    "n1::integrity::no_accept_rounds": {
+      "value": 84,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:15"
+    },
+    "n1::integrity::plan_calls": {
+      "value": 4000,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:16"
+    },
+    "n1::success::c0.2_k0": {
+      "value": 0.37,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:17"
+    },
+    "n1::success::c0.2_k1": {
+      "value": 0.61,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:18"
+    },
+    "n1::success::c0.2_k2": {
+      "value": 0.61,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:19"
+    },
+    "n1::success::c0.2_k4": {
+      "value": 0.61,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:20"
+    },
+    "n1::success::c0.4_k0": {
+      "value": 0.37,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:21"
+    },
+    "n1::success::c0.4_k1": {
+      "value": 0.61,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:22"
+    },
+    "n1::success::c0.4_k2": {
+      "value": 0.61,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:23"
+    },
+    "n1::success::c0.4_k4": {
+      "value": 0.61,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:24"
+    },
+    "n1::success::c0.6_k0": {
+      "value": 0.37,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:25"
+    },
+    "n1::success::c0.6_k1": {
+      "value": 0.8,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:26"
+    },
+    "n1::success::c0.6_k2": {
+      "value": 0.8,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:27"
+    },
+    "n1::success::c0.6_k4": {
+      "value": 0.8,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:28"
+    },
+    "n1::success::c0.8_k0": {
+      "value": 0.37,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:29"
+    },
+    "n1::success::c0.8_k1": {
+      "value": 0.95,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:30"
+    },
+    "n1::success::c0.8_k2": {
+      "value": 0.95,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:31"
+    },
+    "n1::success::c0.8_k4": {
+      "value": 0.95,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:32"
+    },
+    "n1::success::c1.0_k0": {
+      "value": 0.37,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:33"
+    },
+    "n1::success::c1.0_k1": {
+      "value": 1.0,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:34"
+    },
+    "n1::success::c1.0_k2": {
+      "value": 1.0,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:35"
+    },
+    "n1::success::c1.0_k4": {
+      "value": 1.0,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:36"
+    },
+    "n1::primary::interaction_coverage_x_k": {
+      "value": 0.0,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:37"
+    },
+    "n1::primary::delta_k4_k1_high": {
+      "value": 0.0,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:38"
+    },
+    "n1::primary::delta_k4_k1_low": {
+      "value": 0.0,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:39"
+    },
+    "n1::robustness::interaction_blocks": {
+      "value": 0.0,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:40"
+    },
+    "n1::robustness::divergence_low_blocks": {
+      "value": 0.0,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:41"
+    },
+    "n1::robustness::divergence_high_blocks": {
+      "value": 0.0,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:42"
+    },
+    "n1::falsifier::divergence_events_low": {
+      "value": 0,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:43"
+    },
+    "n1::falsifier::divergence_transitions_low": {
+      "value": 120,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:44"
+    },
+    "n1::falsifier::divergence_events_high": {
+      "value": 0,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:45"
+    },
+    "n1::falsifier::divergence_transitions_high": {
+      "value": 120,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:46"
+    },
+    "n1::maineffect::coverage_at_k0": {
+      "value": 0.0,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:47"
+    },
+    "n1::maineffect::coverage_at_k1": {
+      "value": 0.365,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:48"
+    },
+    "n1::maineffect::coverage_at_k2": {
+      "value": 0.365,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:49"
+    },
+    "n1::maineffect::coverage_at_k4": {
+      "value": 0.365,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:50"
+    },
+    "n1::success::k0_baseline_pooled": {
+      "value": 0.37,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:51"
+    },
+    "n1::falsifier::divergence_rate_high": {
+      "value": 0.0,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:52"
+    },
+    "n1::falsifier::divergence_rate_low": {
+      "value": 0.0,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:53"
+    },
+    "n1::falsifier::divergence_gap_high_minus_low": {
+      "value": 0.0,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:54"
+    },
+    "n1::editdist::high_k0": {
+      "value": 1.0,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:55"
+    },
+    "n1::editdist::high_k1": {
+      "value": 0.325,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:56"
+    },
+    "n1::editdist::high_k2": {
+      "value": 0.325,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:57"
+    },
+    "n1::editdist::high_k4": {
+      "value": 0.325,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:58"
+    },
+    "n1::editdist::low_k0": {
+      "value": 1.0,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:59"
+    },
+    "n1::editdist::low_k1": {
+      "value": 0.7,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:60"
+    },
+    "n1::editdist::low_k2": {
+      "value": 0.7,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:61"
+    },
+    "n1::editdist::low_k4": {
+      "value": 0.7,
+      "source": "nemo_plan_repair_coverage_n1_single_error_ledger.jsonl:62"
+    },
+    "design::n_runs": {
+      "value": 300,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:1"
+    },
+    "design::n_seeds": {
+      "value": 20,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:2"
+    },
+    "design::n_domains": {
+      "value": 3,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:3"
+    },
+    "design::runs_per_ck_cell": {
+      "value": 60,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:4"
+    },
+    "design::proposer": {
+      "value": "deterministic",
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:5"
+    },
+    "integrity::budget_exhausted_train": {
+      "value": 193,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:6"
+    },
+    "integrity::budget_exhausted_eval": {
+      "value": 240,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:7"
+    },
+    "integrity::no_plan_train": {
+      "value": 3207,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:8"
+    },
+    "integrity::no_plan_eval": {
+      "value": 3199,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:9"
+    },
+    "integrity::parse_failures": {
+      "value": 0,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:10"
+    },
+    "integrity::empty_proposals": {
+      "value": 0,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:11"
+    },
+    "integrity::llm_errors": {
+      "value": 0,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:12"
+    },
+    "integrity::llm_calls": {
+      "value": 0,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:13"
+    },
+    "integrity::no_proposal_rounds": {
+      "value": 110,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:14"
+    },
+    "integrity::no_accept_rounds": {
+      "value": 458,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:15"
+    },
+    "integrity::plan_calls": {
+      "value": 12000,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:16"
+    },
+    "success::c0.2_k0": {
+      "value": 0.0133,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:17"
+    },
+    "success::c0.2_k1": {
+      "value": 0.0267,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:18"
+    },
+    "success::c0.2_k2": {
+      "value": 0.0733,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:19"
+    },
+    "success::c0.2_k4": {
+      "value": 0.1733,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:20"
+    },
+    "success::c0.4_k0": {
+      "value": 0.0133,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:21"
+    },
+    "success::c0.4_k1": {
+      "value": 0.0233,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:22"
+    },
+    "success::c0.4_k2": {
+      "value": 0.15,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:23"
+    },
+    "success::c0.4_k4": {
+      "value": 0.2933,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:24"
+    },
+    "success::c0.6_k0": {
+      "value": 0.0133,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:25"
+    },
+    "success::c0.6_k1": {
+      "value": 0.0167,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:26"
+    },
+    "success::c0.6_k2": {
+      "value": 0.1733,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:27"
+    },
+    "success::c0.6_k4": {
+      "value": 0.42,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:28"
+    },
+    "success::c0.8_k0": {
+      "value": 0.0133,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:29"
+    },
+    "success::c0.8_k1": {
+      "value": 0.0367,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:30"
+    },
+    "success::c0.8_k2": {
+      "value": 0.25,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:31"
+    },
+    "success::c0.8_k4": {
+      "value": 0.6567,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:32"
+    },
+    "success::c1.0_k0": {
+      "value": 0.0133,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:33"
+    },
+    "success::c1.0_k1": {
+      "value": 0.0433,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:34"
+    },
+    "success::c1.0_k2": {
+      "value": 0.3167,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:35"
+    },
+    "success::c1.0_k4": {
+      "value": 0.9,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:36"
+    },
+    "primary::interaction_coverage_x_k": {
+      "value": 0.53,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:37"
+    },
+    "primary::delta_k4_k1_high": {
+      "value": 0.7383,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:38"
+    },
+    "primary::delta_k4_k1_low": {
+      "value": 0.2083,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:39"
+    },
+    "robustness::interaction_blocks": {
+      "value": 0.56,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:40"
+    },
+    "robustness::divergence_low_blocks": {
+      "value": 0.0,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:41"
+    },
+    "robustness::divergence_high_blocks": {
+      "value": 0.0,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:42"
+    },
+    "robustness::interaction_gripper": {
+      "value": 0.6,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:43"
+    },
+    "robustness::divergence_low_gripper": {
+      "value": 0.0083,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:44"
+    },
+    "robustness::divergence_high_gripper": {
+      "value": 0.0083,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:45"
+    },
+    "robustness::interaction_logistics": {
+      "value": 0.43,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:46"
+    },
+    "robustness::divergence_low_logistics": {
+      "value": 0.0083,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:47"
+    },
+    "robustness::divergence_high_logistics": {
+      "value": 0.0167,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:48"
+    },
+    "falsifier::divergence_events_low": {
+      "value": 2,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:49"
+    },
+    "falsifier::divergence_transitions_low": {
+      "value": 360,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:50"
+    },
+    "falsifier::divergence_events_high": {
+      "value": 3,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:51"
+    },
+    "falsifier::divergence_transitions_high": {
+      "value": 360,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:52"
+    },
+    "maineffect::coverage_at_k0": {
+      "value": 0.0,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:53"
+    },
+    "maineffect::coverage_at_k1": {
+      "value": 0.015,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:54"
+    },
+    "maineffect::coverage_at_k2": {
+      "value": 0.1717,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:55"
+    },
+    "maineffect::coverage_at_k4": {
+      "value": 0.545,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:56"
+    },
+    "success::k0_baseline_pooled": {
+      "value": 0.0133,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:57"
+    },
+    "residual::visible_k0_low": {
+      "value": 1.3667,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:58"
+    },
+    "residual::visible_k4_low": {
+      "value": 0.6083,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:59"
+    },
+    "residual::invisible_k0_low": {
+      "value": 2.6333,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:60"
+    },
+    "residual::invisible_k4_low": {
+      "value": 2.4083,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:61"
+    },
+    "residual::visible_k0_high": {
+      "value": 3.6417,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:62"
+    },
+    "residual::visible_k4_high": {
+      "value": 0.9083,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:63"
+    },
+    "residual::invisible_k0_high": {
+      "value": 0.3583,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:64"
+    },
+    "residual::invisible_k4_high": {
+      "value": 0.275,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:65"
+    },
+    "residual::visible_increase_events_low": {
+      "value": 0,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:66"
+    },
+    "residual::visible_increase_transitions_low": {
+      "value": 360,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:67"
+    },
+    "residual::visible_increase_rate_low": {
+      "value": 0.0,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:68"
+    },
+    "residual::invisible_increase_events_low": {
+      "value": 22,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:69"
+    },
+    "residual::invisible_increase_transitions_low": {
+      "value": 360,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:70"
+    },
+    "residual::invisible_increase_rate_low": {
+      "value": 0.0611,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:71"
+    },
+    "residual::visible_increase_events_high": {
+      "value": 0,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:72"
+    },
+    "residual::visible_increase_transitions_high": {
+      "value": 360,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:73"
+    },
+    "residual::visible_increase_rate_high": {
+      "value": 0.0,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:74"
+    },
+    "residual::invisible_increase_events_high": {
+      "value": 3,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:75"
+    },
+    "residual::invisible_increase_transitions_high": {
+      "value": 360,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:76"
+    },
+    "residual::invisible_increase_rate_high": {
+      "value": 0.0083,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:77"
+    },
+    "residual::invisible_increase_gap_low_minus_high": {
+      "value": 0.0528,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:78"
+    },
+    "stall::no_accept_rate_low": {
+      "value": 0.6062,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:79"
+    },
+    "stall::no_proposal_rate_low": {
+      "value": 0.0563,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:80"
+    },
+    "stall::no_accept_rate_high": {
+      "value": 0.1437,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:81"
+    },
+    "stall::no_proposal_rate_high": {
+      "value": 0.1396,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:82"
+    },
+    "stall::no_accept_gap_low_minus_high": {
+      "value": 0.4625,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:83"
+    },
+    "falsifier::divergence_rate_high": {
+      "value": 0.0083,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:84"
+    },
+    "falsifier::divergence_rate_low": {
+      "value": 0.0056,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:85"
+    },
+    "falsifier::divergence_gap_high_minus_low": {
+      "value": 0.0028,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:86"
+    },
+    "editdist::high_k0": {
+      "value": 4.0,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:87"
+    },
+    "editdist::high_k1": {
+      "value": 3.075,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:88"
+    },
+    "editdist::high_k2": {
+      "value": 2.2083,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:89"
+    },
+    "editdist::high_k4": {
+      "value": 1.1833,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:90"
+    },
+    "editdist::low_k0": {
+      "value": 4.0,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:91"
+    },
+    "editdist::low_k1": {
+      "value": 3.525,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:92"
+    },
+    "editdist::low_k2": {
+      "value": 3.225,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:93"
+    },
+    "editdist::low_k4": {
+      "value": 3.0167,
+      "source": "nemo_plan_repair_coverage_primary_ledger.jsonl:94"
+    }
+  }
+}

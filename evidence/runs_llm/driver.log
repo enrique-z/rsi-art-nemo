@@ -1,0 +1,47 @@
+[llm] start domain=blocks model=qwen3:8b n_corrupt=4 seeds=8
+[llm] c=0.2 seed=0 41s llm_calls=4 errors=0 parse_fail=0
+[llm] c=0.2 seed=1 34s llm_calls=4 errors=0 parse_fail=0
+[llm] c=0.2 seed=2 31s llm_calls=4 errors=0 parse_fail=0
+[llm] c=0.2 seed=3 20s llm_calls=4 errors=0 parse_fail=0
+[llm] c=0.2 seed=4 33s llm_calls=4 errors=0 parse_fail=0
+[llm] c=0.2 seed=5 32s llm_calls=4 errors=0 parse_fail=0
+[llm] c=0.2 seed=6 47s llm_calls=4 errors=0 parse_fail=2
+[llm] c=0.2 seed=7 31s llm_calls=4 errors=0 parse_fail=0
+[llm-cell] blocks c=0.2 268.8s
+[llm] c=0.4 seed=0 41s llm_calls=4 errors=0 parse_fail=0
+[llm] c=0.4 seed=1 30s llm_calls=4 errors=0 parse_fail=0
+[llm] c=0.4 seed=2 30s llm_calls=4 errors=0 parse_fail=0
+[llm] c=0.4 seed=3 24s llm_calls=4 errors=0 parse_fail=0
+[llm] c=0.4 seed=4 30s llm_calls=4 errors=0 parse_fail=0
+[llm] c=0.4 seed=5 31s llm_calls=4 errors=0 parse_fail=0
+[llm] c=0.4 seed=6 44s llm_calls=4 errors=0 parse_fail=2
+[llm] c=0.4 seed=7 30s llm_calls=4 errors=0 parse_fail=0
+[llm-cell] blocks c=0.4 261.1s
+[llm] c=0.6 seed=0 21s llm_calls=4 errors=0 parse_fail=0
+[llm] c=0.6 seed=1 37s llm_calls=4 errors=0 parse_fail=0
+[llm] c=0.6 seed=2 27s llm_calls=4 errors=0 parse_fail=0
+[llm] c=0.6 seed=3 27s llm_calls=4 errors=0 parse_fail=0
+[llm] c=0.6 seed=4 34s llm_calls=4 errors=0 parse_fail=0
+[llm] c=0.6 seed=5 80s llm_calls=4 errors=0 parse_fail=0
+[llm] c=0.6 seed=6 79s llm_calls=4 errors=0 parse_fail=2
+[llm] c=0.6 seed=7 69s llm_calls=4 errors=0 parse_fail=0
+[llm-cell] blocks c=0.6 373.0s
+[llm] c=0.8 seed=0 36s llm_calls=4 errors=0 parse_fail=0
+[llm] c=0.8 seed=1 32s llm_calls=4 errors=0 parse_fail=0
+[llm] c=0.8 seed=2 32s llm_calls=4 errors=0 parse_fail=0
+[llm] c=0.8 seed=3 21s llm_calls=4 errors=0 parse_fail=0
+[llm] c=0.8 seed=4 33s llm_calls=3 errors=0 parse_fail=0
+[llm] c=0.8 seed=5 72s llm_calls=4 errors=0 parse_fail=0
+[llm] c=0.8 seed=6 43s llm_calls=4 errors=0 parse_fail=2
+[llm] c=0.8 seed=7 31s llm_calls=4 errors=0 parse_fail=0
+[llm-cell] blocks c=0.8 300.4s
+[llm] c=1.0 seed=0 17s llm_calls=4 errors=0 parse_fail=0
+[llm] c=1.0 seed=1 29s llm_calls=4 errors=0 parse_fail=0
+[llm] c=1.0 seed=2 33s llm_calls=4 errors=0 parse_fail=0
+[llm] c=1.0 seed=3 18s llm_calls=4 errors=0 parse_fail=0
+[llm] c=1.0 seed=4 21s llm_calls=4 errors=0 parse_fail=0
+[llm] c=1.0 seed=5 77s llm_calls=4 errors=0 parse_fail=0
+[llm] c=1.0 seed=6 40s llm_calls=4 errors=0 parse_fail=2
+[llm] c=1.0 seed=7 28s llm_calls=4 errors=0 parse_fail=0
+[llm-cell] blocks c=1.0 263.5s
+[llm] done
