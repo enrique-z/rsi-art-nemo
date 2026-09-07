@@ -1,0 +1,380 @@
+{
+  "ledger_rows": {
+    "det::design::n_runs": {
+      "value": 300,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:1"
+    },
+    "det::design::n_seeds": {
+      "value": 20,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:2"
+    },
+    "det::design::n_domains": {
+      "value": 3,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:3"
+    },
+    "det::design::runs_per_ck_cell": {
+      "value": 60,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:4"
+    },
+    "det::design::proposer": {
+      "value": "deterministic",
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:5"
+    },
+    "det::integrity::budget_exhausted_train": {
+      "value": 189,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:6"
+    },
+    "det::integrity::budget_exhausted_eval": {
+      "value": 197,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:7"
+    },
+    "det::integrity::no_plan_train": {
+      "value": 3183,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:8"
+    },
+    "det::integrity::no_plan_eval": {
+      "value": 3137,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:9"
+    },
+    "det::integrity::parse_failures": {
+      "value": 0,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:10"
+    },
+    "det::integrity::empty_proposals": {
+      "value": 0,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:11"
+    },
+    "det::integrity::llm_errors": {
+      "value": 0,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:12"
+    },
+    "det::integrity::llm_calls": {
+      "value": 0,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:13"
+    },
+    "det::integrity::no_proposal_rounds": {
+      "value": 115,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:14"
+    },
+    "det::integrity::no_accept_rounds": {
+      "value": 453,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:15"
+    },
+    "det::integrity::plan_calls": {
+      "value": 12000,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:16"
+    },
+    "det::success::c0.2_k0": {
+      "value": 0.0133,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:17"
+    },
+    "det::success::c0.2_k1": {
+      "value": 0.0267,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:18"
+    },
+    "det::success::c0.2_k2": {
+      "value": 0.0733,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:19"
+    },
+    "det::success::c0.2_k4": {
+      "value": 0.1733,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:20"
+    },
+    "det::success::c0.4_k0": {
+      "value": 0.0133,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:21"
+    },
+    "det::success::c0.4_k1": {
+      "value": 0.0233,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:22"
+    },
+    "det::success::c0.4_k2": {
+      "value": 0.1533,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:23"
+    },
+    "det::success::c0.4_k4": {
+      "value": 0.3,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:24"
+    },
+    "det::success::c0.6_k0": {
+      "value": 0.0133,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:25"
+    },
+    "det::success::c0.6_k1": {
+      "value": 0.0167,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:26"
+    },
+    "det::success::c0.6_k2": {
+      "value": 0.1867,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:27"
+    },
+    "det::success::c0.6_k4": {
+      "value": 0.46,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:28"
+    },
+    "det::success::c0.8_k0": {
+      "value": 0.0133,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:29"
+    },
+    "det::success::c0.8_k1": {
+      "value": 0.0367,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:30"
+    },
+    "det::success::c0.8_k2": {
+      "value": 0.2633,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:31"
+    },
+    "det::success::c0.8_k4": {
+      "value": 0.6767,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:32"
+    },
+    "det::success::c1.0_k0": {
+      "value": 0.0133,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:33"
+    },
+    "det::success::c1.0_k1": {
+      "value": 0.0433,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:34"
+    },
+    "det::success::c1.0_k2": {
+      "value": 0.32,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:35"
+    },
+    "det::success::c1.0_k4": {
+      "value": 0.9033,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:36"
+    },
+    "det::primary::interaction_coverage_x_k": {
+      "value": 0.5383,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:37"
+    },
+    "det::primary::delta_k4_k1_high": {
+      "value": 0.75,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:38"
+    },
+    "det::primary::delta_k4_k1_low": {
+      "value": 0.2117,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:39"
+    },
+    "det::robustness::interaction_blocks": {
+      "value": 0.585,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:40"
+    },
+    "det::robustness::divergence_low_blocks": {
+      "value": 0.0,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:41"
+    },
+    "det::robustness::divergence_high_blocks": {
+      "value": 0.0,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:42"
+    },
+    "det::robustness::interaction_gripper": {
+      "value": 0.6,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:43"
+    },
+    "det::robustness::divergence_low_gripper": {
+      "value": 0.0,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:44"
+    },
+    "det::robustness::divergence_high_gripper": {
+      "value": 0.0,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:45"
+    },
+    "det::robustness::interaction_logistics": {
+      "value": 0.43,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:46"
+    },
+    "det::robustness::divergence_low_logistics": {
+      "value": 0.0083,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:47"
+    },
+    "det::robustness::divergence_high_logistics": {
+      "value": 0.0167,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:48"
+    },
+    "det::falsifier::divergence_events_low": {
+      "value": 1,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:49"
+    },
+    "det::falsifier::divergence_transitions_low": {
+      "value": 360,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:50"
+    },
+    "det::falsifier::divergence_events_high": {
+      "value": 2,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:51"
+    },
+    "det::falsifier::divergence_transitions_high": {
+      "value": 360,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:52"
+    },
+    "det::maineffect::coverage_at_k0": {
+      "value": 0.0,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:53"
+    },
+    "det::maineffect::coverage_at_k1": {
+      "value": 0.015,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:54"
+    },
+    "det::maineffect::coverage_at_k2": {
+      "value": 0.1783,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:55"
+    },
+    "det::maineffect::coverage_at_k4": {
+      "value": 0.5533,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:56"
+    },
+    "det::success::k0_baseline_pooled": {
+      "value": 0.0133,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:57"
+    },
+    "det::residual::visible_k0_low": {
+      "value": 1.3667,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:58"
+    },
+    "det::residual::visible_k4_low": {
+      "value": 0.6083,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:59"
+    },
+    "det::residual::invisible_k0_low": {
+      "value": 2.6333,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:60"
+    },
+    "det::residual::invisible_k4_low": {
+      "value": 2.4083,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:61"
+    },
+    "det::residual::visible_k0_high": {
+      "value": 3.6417,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:62"
+    },
+    "det::residual::visible_k4_high": {
+      "value": 0.9083,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:63"
+    },
+    "det::residual::invisible_k0_high": {
+      "value": 0.3583,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:64"
+    },
+    "det::residual::invisible_k4_high": {
+      "value": 0.2583,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:65"
+    },
+    "det::residual::visible_increase_events_low": {
+      "value": 0,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:66"
+    },
+    "det::residual::visible_increase_transitions_low": {
+      "value": 360,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:67"
+    },
+    "det::residual::visible_increase_rate_low": {
+      "value": 0.0,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:68"
+    },
+    "det::residual::invisible_increase_events_low": {
+      "value": 22,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:69"
+    },
+    "det::residual::invisible_increase_transitions_low": {
+      "value": 360,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:70"
+    },
+    "det::residual::invisible_increase_rate_low": {
+      "value": 0.0611,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:71"
+    },
+    "det::residual::visible_increase_events_high": {
+      "value": 0,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:72"
+    },
+    "det::residual::visible_increase_transitions_high": {
+      "value": 360,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:73"
+    },
+    "det::residual::visible_increase_rate_high": {
+      "value": 0.0,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:74"
+    },
+    "det::residual::invisible_increase_events_high": {
+      "value": 2,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:75"
+    },
+    "det::residual::invisible_increase_transitions_high": {
+      "value": 360,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:76"
+    },
+    "det::residual::invisible_increase_rate_high": {
+      "value": 0.0056,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:77"
+    },
+    "det::residual::invisible_increase_gap_low_minus_high": {
+      "value": 0.0556,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:78"
+    },
+    "det::stall::no_accept_rate_low": {
+      "value": 0.6062,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:79"
+    },
+    "det::stall::no_proposal_rate_low": {
+      "value": 0.0563,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:80"
+    },
+    "det::stall::no_accept_rate_high": {
+      "value": 0.1396,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:81"
+    },
+    "det::stall::no_proposal_rate_high": {
+      "value": 0.1437,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:82"
+    },
+    "det::stall::no_accept_gap_low_minus_high": {
+      "value": 0.4667,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:83"
+    },
+    "det::falsifier::divergence_rate_high": {
+      "value": 0.0056,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:84"
+    },
+    "det::falsifier::divergence_rate_low": {
+      "value": 0.0028,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:85"
+    },
+    "det::falsifier::divergence_gap_high_minus_low": {
+      "value": 0.0028,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:86"
+    },
+    "det::editdist::high_k0": {
+      "value": 4.0,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:87"
+    },
+    "det::editdist::high_k1": {
+      "value": 3.075,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:88"
+    },
+    "det::editdist::high_k2": {
+      "value": 2.1917,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:89"
+    },
+    "det::editdist::high_k4": {
+      "value": 1.1667,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:90"
+    },
+    "det::editdist::low_k0": {
+      "value": 4.0,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:91"
+    },
+    "det::editdist::low_k1": {
+      "value": 3.525,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:92"
+    },
+    "det::editdist::low_k2": {
+      "value": 3.225,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:93"
+    },
+    "det::editdist::low_k4": {
+      "value": 3.0167,
+      "source": "nemo_plan_repair_coverage_detbudget_ledger.jsonl:94"
+    }
+  }
+}

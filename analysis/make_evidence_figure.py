@@ -103,10 +103,13 @@ def main():
     print(f"[assert] {len(covs)*len(A.KS) + 3 + 2*len(A.KS)} recomputed values match the ledger", flush=True)
 
     # ---------------- DRAW ----------------
+    # pdf.fonttype 42 = embed TrueType. The matplotlib default (3) emits Type-3
+    # fonts, which many camera-ready font checkers reject.
     plt.rcParams.update({"font.size": 7.2, "axes.linewidth": 0.6,
                          "xtick.major.width": 0.6, "ytick.major.width": 0.6,
                          "legend.frameon": False, "axes.spines.top": False,
-                         "axes.spines.right": False})
+                         "axes.spines.right": False,
+                         "pdf.fonttype": 42, "ps.fonttype": 42})
     fig, axes = plt.subplots(1, 4, figsize=(11.0, 2.5))
     cmap = plt.get_cmap("viridis")
     colors = {c: cmap(i / max(1, len(covs) - 1)) for i, c in enumerate(covs)}

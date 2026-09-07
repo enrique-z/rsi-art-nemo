@@ -47,10 +47,17 @@ pip install pyperplan
 # 2. Run the full deterministic grid (primary arm)
 #    Grid: 3 domains × 5 coverage levels × 3 repair rounds × ≥20 seeds
 cd analysis
-python3 run_grid.py
+python3 run_grid.py --full
 
 # 3. Run the LLM secondary arm (requires Ollama + qwen3:8b)
 python3 run_llm_arm.py
+
+# 3b. Run the A12 deterministic-budget replication grid.
+#     Identical to the primary grid in every respect except that the wallclock
+#     bound is disabled, leaving the 1200-expansion cap as the only budget.
+#     Writes evidence/runs_detbudget/ (namespace det::); it never touches
+#     evidence/runs/. The wallclock grid remains the pre-registered primary.
+NEMO_PLAN_MAX_SECONDS=inf python3 run_grid.py --full --out ../evidence/runs_detbudget
 
 # 4. Aggregate and verify
 python3 aggregate.py
@@ -87,10 +94,11 @@ All numeric results pass through the ledgers in `evidence/` and are verified by
 | `evidence/nemo_plan_repair_coverage_primary_ledger.jsonl` | Primary-arm ledger |
 | `evidence/nemo_plan_repair_coverage_llm_secondary_ledger.jsonl` | LLM-arm ledger |
 | `evidence/nemo_plan_repair_coverage_n1_single_error_ledger.jsonl` | N=1 single-error ledger |
+| `evidence/nemo_plan_repair_coverage_detbudget_ledger.jsonl` | A12 deterministic-budget replication ledger (`det::` namespace) |
 | `evidence/*_aggregates.jsonl` | Per-arm aggregates |
 | `evidence/nemo_plan_repair_coverage_stamp_manifest.json` | Stamp manifest |
 | `evidence/manifests/` | Per-arm manifests |
-| `evidence/runs/`, `evidence/runs_llm/`, `evidence/runs_n1/`, `evidence/runs_llm_full/` | Per-cell per-seed run records |
+| `evidence/runs/`, `evidence/runs_llm/`, `evidence/runs_n1/`, `evidence/runs_llm_full/`, `evidence/runs_detbudget/` | Per-cell per-seed run records |
 | `refs.bib` | Bibliography (BibTeX) |
 | `build.guard.log` | Anti-fabrication guard output for the submitted manuscript: every stamped cell resolved against the manifest |
 | `lit/` | Literature notes, novelty check, citation verification log |

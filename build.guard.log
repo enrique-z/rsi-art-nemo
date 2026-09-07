@@ -1,187 +1,174 @@
 [guard] manuscript      : main.tex
-[guard] manifest        : nemo_plan_repair_coverage_stamp_manifest.json (218 rows)
-[guard] ledger verdicts : 218
-[guard] macros          : 319 StampedCell, 330 SafeNum, 0 ResultCell
+[guard] manifest        : nemo_plan_repair_coverage_stamp_manifest.json (312 rows)
+[guard] ledger verdicts : 312
+[guard] macros          : 521 StampedCell, 334 SafeNum, 0 ResultCell
 [guard] mode            : strict
 [guard] QD enforce      : off (pilot)
-[guard] WARN  FG-2 safenum-unguarded: line 74: \SafeNum{95} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 75: \SafeNum{0.447} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 75: \SafeNum{0.615} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unstamped: line 93: \SafeNum{0.0056} matches manifest row 'falsifier::divergence_rate_low' but is not a \StampedCell — consider \StampedCell{...}{...}{0.0056}
-[guard] WARN  FG-2 safenum-unguarded: line 93: \SafeNum{0.0111} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 155: \SafeNum{1200} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 184: \SafeNum{31} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 184: \SafeNum{99} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 185: \SafeNum{1200} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 210: \SafeNum{95} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 247: \SafeNum{95} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unstamped: line 281: \SafeNum{0.0056} matches manifest row 'falsifier::divergence_rate_low' but is not a \StampedCell — consider \StampedCell{...}{...}{0.0056}
-[guard] WARN  FG-2 safenum-unguarded: line 281: \SafeNum{0.0111} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 302: \SafeNum{0.0278} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 302: \SafeNum{0.0750} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  F-028 cross-group: line 791: cross-group range claim [197.0, 240.0] spans groups 'integrity' and 'det::integrity' — F-028 cannot verify extremes across groups; verify manually that intermediate sibling values don't fall outside [197.0, 240.0]: …haustion falls from \StampedCell{integrity}{budget_exhausted_eval}{240} to \StampedCell{det::integrity}{budget_exhausted_eval}{197} of \StampedCel…
+[guard] WARN  FG-2 safenum-unguarded: line 75: \SafeNum{95} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 76: \SafeNum{0.447} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 76: \SafeNum{0.615} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 94: \SafeNum{0.0111} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 157: \SafeNum{1200} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 185: \SafeNum{31} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 185: \SafeNum{99} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 186: \SafeNum{1200} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 212: \SafeNum{95} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 249: \SafeNum{95} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 283: \SafeNum{0.0111} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 304: \SafeNum{0.0278} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 304: \SafeNum{0.0750} does not appear in the manifest — unguarded numeric literal
 [guard] WARN  FG-2 safenum-unguarded: line 329: \SafeNum{0.3875} does not appear in the manifest — unguarded numeric literal
 [guard] WARN  FG-2 safenum-unguarded: line 329: \SafeNum{0.5396} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 430: \SafeNum{24} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 431: \SafeNum{24} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 455: \SafeNum{1200} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 457: \SafeNum{774} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 481: \SafeNum{0.1875} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 495: \SafeNum{0.210} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 496: \SafeNum{0.540} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 506: \SafeNum{30} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 506: \SafeNum{30} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unstamped: line 506: \SafeNum{60} matches manifest row 'design::runs_per_ck_cell' but is not a \StampedCell — consider \StampedCell{...}{...}{60}
-[guard] WARN  FG-2 safenum-unguarded: line 508: \SafeNum{50} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 523: \SafeNum{95} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 565: \SafeNum{95} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 576: \SafeNum{0.0033} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unstamped: line 576: \SafeNum{0.0267} matches manifest row 'success::c0.2_k1' but is not a \StampedCell — consider \StampedCell{...}{...}{0.0267}
-[guard] WARN  FG-2 safenum-unguarded: line 576: \SafeNum{0.1700} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 576: \SafeNum{0.5700} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 577: \SafeNum{0.0400} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 577: \SafeNum{0.4000} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 577: \SafeNum{0.8100} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 578: \SafeNum{0.0300} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 578: \SafeNum{0.1267} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 578: \SafeNum{0.4000} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 578: \SafeNum{0.8100} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 579: \SafeNum{0.0867} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 579: \SafeNum{0.2733} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 579: \SafeNum{0.4000} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 579: \SafeNum{0.8100} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 581: \SafeNum{0.0033} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unstamped: line 581: \SafeNum{0.0267} matches manifest row 'success::c0.2_k1' but is not a \StampedCell — consider \StampedCell{...}{...}{0.0267}
-[guard] WARN  FG-2 safenum-unguarded: line 581: \SafeNum{0.1700} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 581: \SafeNum{0.5700} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 582: \SafeNum{0.0100} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unstamped: line 582: \SafeNum{0.0367} matches manifest row 'success::c0.8_k1' but is not a \StampedCell — consider \StampedCell{...}{...}{0.0367}
-[guard] WARN  FG-2 safenum-unguarded: line 582: \SafeNum{0.4000} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 582: \SafeNum{0.8100} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unstamped: line 583: \SafeNum{0.0733} matches manifest row 'success::c0.2_k2' but is not a \StampedCell — consider \StampedCell{...}{...}{0.0733}
-[guard] WARN  FG-2 safenum-unguarded: line 583: \SafeNum{0.2333} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 583: \SafeNum{0.4000} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 583: \SafeNum{0.8100} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 584: \SafeNum{0.1933} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 584: \SafeNum{0.3967} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 584: \SafeNum{0.4000} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 584: \SafeNum{0.8100} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 586: \SafeNum{0.0033} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unstamped: line 586: \SafeNum{0.0267} matches manifest row 'success::c0.2_k1' but is not a \StampedCell — consider \StampedCell{...}{...}{0.0267}
-[guard] WARN  FG-2 safenum-unguarded: line 586: \SafeNum{0.1700} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 586: \SafeNum{0.5700} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 587: \SafeNum{0.0067} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 587: \SafeNum{0.0300} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unstamped: line 587: \SafeNum{0.6000} matches manifest row 'robustness::interaction_gripper' but is not a \StampedCell — consider \StampedCell{...}{...}{0.6000}
-[guard] WARN  FG-2 safenum-unguarded: line 588: \SafeNum{0.0700} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 588: \SafeNum{0.3000} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unstamped: line 588: \SafeNum{0.6000} matches manifest row 'robustness::interaction_gripper' but is not a \StampedCell — consider \StampedCell{...}{...}{0.6000}
-[guard] WARN  FG-2 safenum-unguarded: line 589: \SafeNum{0.2633} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 589: \SafeNum{0.5833} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unstamped: line 589: \SafeNum{0.6000} matches manifest row 'robustness::interaction_gripper' but is not a \StampedCell — consider \StampedCell{...}{...}{0.6000}
-[guard] WARN  FG-2 safenum-unguarded: line 591: \SafeNum{0.0033} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unstamped: line 591: \SafeNum{0.0267} matches manifest row 'success::c0.2_k1' but is not a \StampedCell — consider \StampedCell{...}{...}{0.0267}
-[guard] WARN  FG-2 safenum-unguarded: line 591: \SafeNum{0.1700} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 591: \SafeNum{0.5700} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 592: \SafeNum{0.0100} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unstamped: line 592: \SafeNum{0.0733} matches manifest row 'success::c0.2_k2' but is not a \StampedCell — consider \StampedCell{...}{...}{0.0733}
-[guard] WARN  FG-2 safenum-unguarded: line 592: \SafeNum{0.8500} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unstamped: line 593: \SafeNum{0.1500} matches manifest row 'success::c0.4_k2' but is not a \StampedCell — consider \StampedCell{...}{...}{0.1500}
-[guard] WARN  FG-2 safenum-unguarded: line 593: \SafeNum{0.8500} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 594: \SafeNum{0.5400} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 594: \SafeNum{0.7667} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 594: \SafeNum{0.8500} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 594: \SafeNum{0.3750} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 596: \SafeNum{0.0033} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unstamped: line 596: \SafeNum{0.0267} matches manifest row 'success::c0.2_k1' but is not a \StampedCell — consider \StampedCell{...}{...}{0.0267}
-[guard] WARN  FG-2 safenum-unguarded: line 596: \SafeNum{0.1700} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 596: \SafeNum{0.5700} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 597: \SafeNum{0.0800} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 598: \SafeNum{0.2100} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 598: \SafeNum{0.4333} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 599: \SafeNum{0.8133} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 599: \SafeNum{0.9700} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 601: \SafeNum{0.0033} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unstamped: line 601: \SafeNum{0.0267} matches manifest row 'success::c0.2_k1' but is not a \StampedCell — consider \StampedCell{...}{...}{0.0267}
-[guard] WARN  FG-2 safenum-unguarded: line 601: \SafeNum{0.1700} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 601: \SafeNum{0.5700} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 608: \SafeNum{95} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 623: \SafeNum{0.4467} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 623: \SafeNum{0.6150} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 623: \SafeNum{0.1875} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 624: \SafeNum{0.6517} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 624: \SafeNum{0.8200} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 624: \SafeNum{0.1875} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 625: \SafeNum{0.1267} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 625: \SafeNum{0.2967} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 627: \SafeNum{-0.0033} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 627: \SafeNum{0.0450} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 627: \SafeNum{0.2100} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 627: \SafeNum{0.5400} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 628: \SafeNum{0.0967} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 628: \SafeNum{0.2483} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 628: \SafeNum{0.2100} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 628: \SafeNum{0.5400} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 629: \SafeNum{0.4583} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 629: \SafeNum{0.6300} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 629: \SafeNum{0.2100} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 629: \SafeNum{0.5400} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 629: \SafeNum{0.1875} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 634: \SafeNum{0.0139} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 635: \SafeNum{0.0222} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 636: \SafeNum{-0.0056} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 636: \SafeNum{0.0111} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 638: \SafeNum{3.0333} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 638: \SafeNum{3.1250} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unstamped: line 638: \SafeNum{0.1500} matches manifest row 'success::c0.4_k2' but is not a \StampedCell — consider \StampedCell{...}{...}{0.1500}
-[guard] WARN  FG-2 safenum-unguarded: line 638: \SafeNum{0.5250} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 638: \SafeNum{3.6250} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 639: \SafeNum{2.1167} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 639: \SafeNum{2.3083} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unstamped: line 639: \SafeNum{0.1500} matches manifest row 'success::c0.4_k2' but is not a \StampedCell — consider \StampedCell{...}{...}{0.1500}
-[guard] WARN  FG-2 safenum-unguarded: line 639: \SafeNum{0.5250} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 639: \SafeNum{2.2500} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 639: \SafeNum{3.3750} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 640: \SafeNum{0.9917} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 640: \SafeNum{1.3750} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unstamped: line 640: \SafeNum{0.1500} matches manifest row 'success::c0.4_k2' but is not a \StampedCell — consider \StampedCell{...}{...}{0.1500}
-[guard] WARN  FG-2 safenum-unguarded: line 640: \SafeNum{0.5250} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unstamped: line 640: \SafeNum{2.0000} matches manifest row 'falsifier::divergence_events_low' but is not a \StampedCell — consider \StampedCell{...}{...}{2.0000}
-[guard] WARN  FG-2 safenum-unguarded: line 640: \SafeNum{3.3125} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 642: \SafeNum{3.3917} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 642: \SafeNum{3.6500} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 642: \SafeNum{0.5250} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 642: \SafeNum{0.8500} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 642: \SafeNum{3.1250} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 642: \SafeNum{3.8750} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unstamped: line 643: \SafeNum{3.0167} matches manifest row 'editdist::low_k4' but is not a \StampedCell — consider \StampedCell{...}{...}{3.0167}
-[guard] WARN  FG-2 safenum-unguarded: line 643: \SafeNum{3.4250} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 643: \SafeNum{0.5250} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 643: \SafeNum{0.8500} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 643: \SafeNum{3.8750} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 644: \SafeNum{2.7167} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 644: \SafeNum{3.2917} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 644: \SafeNum{0.5250} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 644: \SafeNum{0.8500} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 644: \SafeNum{3.8750} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 645: \SafeNum{0.3900} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 645: \SafeNum{0.7250} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 645: \SafeNum{0.1875} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 659: \SafeNum{1200} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 664: \SafeNum{95} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 689: \SafeNum{0.5188} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 689: \SafeNum{0.6896} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 689: \SafeNum{0.0938} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 689: \SafeNum{0.1979} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 690: \SafeNum{0.0292} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 690: \SafeNum{0.0875} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 690: \SafeNum{0.1000} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 690: \SafeNum{0.1812} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 691: \SafeNum{0.3875} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 691: \SafeNum{0.5396} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 692: \SafeNum{0.0278} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 692: \SafeNum{0.0750} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 711: \SafeNum{0.4350} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unguarded: line 711: \SafeNum{0.7600} does not appear in the manifest — unguarded numeric literal
-[guard] WARN  FG-2 safenum-unstamped: line 711: \SafeNum{0.2750} matches manifest row 'residual::invisible_k4_high' but is not a \StampedCell — consider \StampedCell{...}{...}{0.2750}
-[guard] WARN  FG-2 safenum-unguarded: line 711: \SafeNum{0.5850} does not appear in the manifest — unguarded numeric literal
-[guard] OK — 319 stamped cell(s) resolve against the manifest
+[guard] WARN  FG-2 safenum-unguarded: line 435: \SafeNum{24} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 436: \SafeNum{24} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 463: \SafeNum{1200} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 465: \SafeNum{774} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 487: \SafeNum{1200} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 498: \SafeNum{0.1875} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 532: \SafeNum{0.210} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 533: \SafeNum{0.540} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 543: \SafeNum{30} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 543: \SafeNum{30} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 545: \SafeNum{50} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 561: \SafeNum{95} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 603: \SafeNum{95} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 614: \SafeNum{0.0033} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 614: \SafeNum{0.1700} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 614: \SafeNum{0.5700} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 615: \SafeNum{0.0400} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 615: \SafeNum{0.4000} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 615: \SafeNum{0.8100} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 616: \SafeNum{0.0300} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 616: \SafeNum{0.1267} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 616: \SafeNum{0.4000} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 616: \SafeNum{0.8100} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 617: \SafeNum{0.0867} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 617: \SafeNum{0.2733} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 617: \SafeNum{0.4000} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 617: \SafeNum{0.8100} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 619: \SafeNum{0.0033} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 619: \SafeNum{0.1700} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 619: \SafeNum{0.5700} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 620: \SafeNum{0.0100} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 620: \SafeNum{0.4000} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 620: \SafeNum{0.8100} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 621: \SafeNum{0.2333} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 621: \SafeNum{0.4000} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 621: \SafeNum{0.8100} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 622: \SafeNum{0.1933} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 622: \SafeNum{0.3967} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 622: \SafeNum{0.4000} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 622: \SafeNum{0.8100} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 624: \SafeNum{0.0033} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 624: \SafeNum{0.1700} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 624: \SafeNum{0.5700} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 625: \SafeNum{0.0067} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 625: \SafeNum{0.0300} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 626: \SafeNum{0.0700} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unstamped: line 626: \SafeNum{0.3000} matches manifest row 'det::success::c0.4_k4' but is not a \StampedCell — consider \StampedCell{...}{...}{0.3000}
+[guard] WARN  FG-2 safenum-unstamped: line 627: \SafeNum{0.2633} matches manifest row 'det::success::c0.8_k2' but is not a \StampedCell — consider \StampedCell{...}{...}{0.2633}
+[guard] WARN  FG-2 safenum-unguarded: line 627: \SafeNum{0.5833} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 629: \SafeNum{0.0033} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 629: \SafeNum{0.1700} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 629: \SafeNum{0.5700} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 630: \SafeNum{0.0100} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 630: \SafeNum{0.8500} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unstamped: line 631: \SafeNum{0.1500} matches manifest row 'success::c0.4_k2' but is not a \StampedCell — consider \StampedCell{...}{...}{0.1500}
+[guard] WARN  FG-2 safenum-unguarded: line 631: \SafeNum{0.8500} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 632: \SafeNum{0.5400} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 632: \SafeNum{0.7667} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 632: \SafeNum{0.8500} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 632: \SafeNum{0.3750} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 634: \SafeNum{0.0033} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 634: \SafeNum{0.1700} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 634: \SafeNum{0.5700} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 635: \SafeNum{0.0800} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 636: \SafeNum{0.2100} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 636: \SafeNum{0.4333} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 637: \SafeNum{0.8133} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 637: \SafeNum{0.9700} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 639: \SafeNum{0.0033} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 639: \SafeNum{0.1700} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 639: \SafeNum{0.5700} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 646: \SafeNum{95} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 661: \SafeNum{0.4467} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 661: \SafeNum{0.6150} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 661: \SafeNum{0.1875} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 662: \SafeNum{0.6517} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 662: \SafeNum{0.8200} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 662: \SafeNum{0.1875} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 663: \SafeNum{0.1267} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 663: \SafeNum{0.2967} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 665: \SafeNum{-0.0033} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 665: \SafeNum{0.0450} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 665: \SafeNum{0.2100} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 665: \SafeNum{0.5400} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 666: \SafeNum{0.0967} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 666: \SafeNum{0.2483} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 666: \SafeNum{0.2100} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 666: \SafeNum{0.5400} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 667: \SafeNum{0.4583} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 667: \SafeNum{0.6300} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 667: \SafeNum{0.2100} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 667: \SafeNum{0.5400} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 667: \SafeNum{0.1875} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 672: \SafeNum{0.0139} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 673: \SafeNum{0.0222} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 674: \SafeNum{-0.0056} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 674: \SafeNum{0.0111} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 676: \SafeNum{3.0333} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 676: \SafeNum{3.1250} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unstamped: line 676: \SafeNum{0.1500} matches manifest row 'success::c0.4_k2' but is not a \StampedCell — consider \StampedCell{...}{...}{0.1500}
+[guard] WARN  FG-2 safenum-unguarded: line 676: \SafeNum{0.5250} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 676: \SafeNum{3.6250} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 677: \SafeNum{2.1167} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 677: \SafeNum{2.3083} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unstamped: line 677: \SafeNum{0.1500} matches manifest row 'success::c0.4_k2' but is not a \StampedCell — consider \StampedCell{...}{...}{0.1500}
+[guard] WARN  FG-2 safenum-unguarded: line 677: \SafeNum{0.5250} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 677: \SafeNum{2.2500} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 677: \SafeNum{3.3750} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 678: \SafeNum{0.9917} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 678: \SafeNum{1.3750} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unstamped: line 678: \SafeNum{0.1500} matches manifest row 'success::c0.4_k2' but is not a \StampedCell — consider \StampedCell{...}{...}{0.1500}
+[guard] WARN  FG-2 safenum-unguarded: line 678: \SafeNum{0.5250} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 678: \SafeNum{3.3125} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 680: \SafeNum{3.3917} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 680: \SafeNum{3.6500} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 680: \SafeNum{0.5250} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 680: \SafeNum{0.8500} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 680: \SafeNum{3.1250} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 680: \SafeNum{3.8750} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 681: \SafeNum{3.4250} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 681: \SafeNum{0.5250} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 681: \SafeNum{0.8500} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 681: \SafeNum{3.8750} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 682: \SafeNum{2.7167} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 682: \SafeNum{3.2917} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 682: \SafeNum{0.5250} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 682: \SafeNum{0.8500} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 682: \SafeNum{3.8750} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 683: \SafeNum{0.3900} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 683: \SafeNum{0.7250} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 683: \SafeNum{0.1875} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 697: \SafeNum{1200} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 702: \SafeNum{95} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 727: \SafeNum{0.5188} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 727: \SafeNum{0.6896} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 727: \SafeNum{0.0938} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 727: \SafeNum{0.1979} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 728: \SafeNum{0.0292} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 728: \SafeNum{0.0875} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 728: \SafeNum{0.1000} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 728: \SafeNum{0.1812} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 729: \SafeNum{0.3875} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 729: \SafeNum{0.5396} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 730: \SafeNum{0.0278} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 730: \SafeNum{0.0750} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 749: \SafeNum{0.4350} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 749: \SafeNum{0.7600} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unstamped: line 749: \SafeNum{0.2750} matches manifest row 'residual::invisible_k4_high' but is not a \StampedCell — consider \StampedCell{...}{...}{0.2750}
+[guard] WARN  FG-2 safenum-unstamped: line 749: \SafeNum{0.5850} matches manifest row 'det::robustness::interaction_blocks' but is not a \StampedCell — consider \StampedCell{...}{...}{0.5850}
+[guard] WARN  FG-2 safenum-unguarded: line 759: \SafeNum{1200} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 764: \SafeNum{1200} does not appear in the manifest — unguarded numeric literal
+[guard] OK — 521 stamped cell(s) resolve against the manifest
