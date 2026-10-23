@@ -1,0 +1,515 @@
+{
+  "arm": "llmfull (A11) -- EXCLUDED by pre-committed contamination stop-rule; descriptive only",
+  "source": "evidence/runs_llm_full",
+  "proposer": [
+    "llm"
+  ],
+  "llm_model": [
+    "qwen3:8b"
+  ],
+  "definitions": "analysis/aggregate.py pure functions; seed-clustered bootstrap n_boot=10000, rng seed=20260907, unit=seed; HIGH=(0.8, 1.0), LOW=(0.2, 0.4); values round(x,4)",
+  "n_runs": 300,
+  "n_seeds": 20,
+  "seeds": [
+    0,
+    19
+  ],
+  "domains": [
+    "blocks",
+    "gripper",
+    "logistics"
+  ],
+  "coverages": [
+    0.2,
+    0.4,
+    0.6,
+    0.8,
+    1.0
+  ],
+  "runs_per_ck_cell": {
+    "c0.2": 60,
+    "c0.4": 60,
+    "c0.6": 60,
+    "c0.8": 60,
+    "c1.0": 60
+  },
+  "expected_runs": 300,
+  "duplicate_or_missing_rows": false,
+  "success": {
+    "c0.2_k0": {
+      "value": 0.0133,
+      "ci_low": 0.0033,
+      "ci_high": 0.0267,
+      "valid_resamples": 10000
+    },
+    "c0.2_k1": {
+      "value": 0.04,
+      "ci_low": 0.0133,
+      "ci_high": 0.0767,
+      "valid_resamples": 10000
+    },
+    "c0.2_k2": {
+      "value": 0.07,
+      "ci_low": 0.0233,
+      "ci_high": 0.1233,
+      "valid_resamples": 10000
+    },
+    "c0.2_k4": {
+      "value": 0.0867,
+      "ci_low": 0.0333,
+      "ci_high": 0.1467,
+      "valid_resamples": 10000
+    },
+    "c0.4_k0": {
+      "value": 0.0133,
+      "ci_low": 0.0033,
+      "ci_high": 0.0267,
+      "valid_resamples": 10000
+    },
+    "c0.4_k1": {
+      "value": 0.04,
+      "ci_low": 0.0133,
+      "ci_high": 0.0767,
+      "valid_resamples": 10000
+    },
+    "c0.4_k2": {
+      "value": 0.07,
+      "ci_low": 0.0167,
+      "ci_high": 0.15,
+      "valid_resamples": 10000
+    },
+    "c0.4_k4": {
+      "value": 0.1033,
+      "ci_low": 0.0367,
+      "ci_high": 0.19,
+      "valid_resamples": 10000
+    },
+    "c0.6_k0": {
+      "value": 0.0133,
+      "ci_low": 0.0033,
+      "ci_high": 0.0267,
+      "valid_resamples": 10000
+    },
+    "c0.6_k1": {
+      "value": 0.0433,
+      "ci_low": 0.0167,
+      "ci_high": 0.08,
+      "valid_resamples": 10000
+    },
+    "c0.6_k2": {
+      "value": 0.0733,
+      "ci_low": 0.02,
+      "ci_high": 0.1533,
+      "valid_resamples": 10000
+    },
+    "c0.6_k4": {
+      "value": 0.1233,
+      "ci_low": 0.0533,
+      "ci_high": 0.2067,
+      "valid_resamples": 10000
+    },
+    "c0.8_k0": {
+      "value": 0.0133,
+      "ci_low": 0.0033,
+      "ci_high": 0.0267,
+      "valid_resamples": 10000
+    },
+    "c0.8_k1": {
+      "value": 0.0367,
+      "ci_low": 0.01,
+      "ci_high": 0.0733,
+      "valid_resamples": 10000
+    },
+    "c0.8_k2": {
+      "value": 0.1033,
+      "ci_low": 0.0333,
+      "ci_high": 0.19,
+      "valid_resamples": 10000
+    },
+    "c0.8_k4": {
+      "value": 0.2,
+      "ci_low": 0.12,
+      "ci_high": 0.2867,
+      "valid_resamples": 10000
+    },
+    "c1.0_k0": {
+      "value": 0.0133,
+      "ci_low": 0.0033,
+      "ci_high": 0.0267,
+      "valid_resamples": 10000
+    },
+    "c1.0_k1": {
+      "value": 0.04,
+      "ci_low": 0.0133,
+      "ci_high": 0.0767,
+      "valid_resamples": 10000
+    },
+    "c1.0_k2": {
+      "value": 0.1267,
+      "ci_low": 0.0533,
+      "ci_high": 0.2133,
+      "valid_resamples": 10000
+    },
+    "c1.0_k4": {
+      "value": 0.1733,
+      "ci_low": 0.0933,
+      "ci_high": 0.26,
+      "valid_resamples": 10000
+    }
+  },
+  "success_k0_baseline_pooled": {
+    "value": 0.0133,
+    "ci_low": 0.0033,
+    "ci_high": 0.0267,
+    "valid_resamples": 10000
+  },
+  "interaction_coverage_x_k": {
+    "value": 0.0933,
+    "ci_low": 0.045,
+    "ci_high": 0.145,
+    "valid_resamples": 10000
+  },
+  "delta_k4_k1_high": {
+    "value": 0.1483,
+    "ci_low": 0.085,
+    "ci_high": 0.2133,
+    "valid_resamples": 10000
+  },
+  "delta_k4_k1_low": {
+    "value": 0.055,
+    "ci_low": 0.0133,
+    "ci_high": 0.105,
+    "valid_resamples": 10000
+  },
+  "maineffect_coverage": {
+    "k0": {
+      "value": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.0,
+      "valid_resamples": 10000
+    },
+    "k1": {
+      "value": -0.0017,
+      "ci_low": -0.01,
+      "ci_high": 0.0067,
+      "valid_resamples": 10000
+    },
+    "k2": {
+      "value": 0.045,
+      "ci_low": 0.01,
+      "ci_high": 0.085,
+      "valid_resamples": 10000
+    },
+    "k4": {
+      "value": 0.0917,
+      "ci_low": 0.0467,
+      "ci_high": 0.1383,
+      "valid_resamples": 10000
+    }
+  },
+  "per_domain": {
+    "blocks": {
+      "interaction": {
+        "value": 0.01,
+        "ci_low": -0.065,
+        "ci_high": 0.085,
+        "valid_resamples": 10000
+      },
+      "divergence_low": 0.0,
+      "divergence_high": 0.0
+    },
+    "gripper": {
+      "interaction": {
+        "value": 0.025,
+        "ci_low": 0.0,
+        "ci_high": 0.075,
+        "valid_resamples": 10000
+      },
+      "divergence_low": 0.0,
+      "divergence_high": 0.0
+    },
+    "logistics": {
+      "interaction": {
+        "value": 0.245,
+        "ci_low": 0.11,
+        "ci_high": 0.395,
+        "valid_resamples": 10000
+      },
+      "divergence_low": 0.0167,
+      "divergence_high": 0.0333
+    }
+  },
+  "editdist": {
+    "high_k0": {
+      "value": 4.0,
+      "ci_low": 4.0,
+      "ci_high": 4.0,
+      "valid_resamples": 10000
+    },
+    "high_k4": {
+      "value": 2.7833,
+      "ci_low": 2.5167,
+      "ci_high": 3.0583,
+      "valid_resamples": 10000
+    },
+    "low_k0": {
+      "value": 4.0,
+      "ci_low": 4.0,
+      "ci_high": 4.0,
+      "valid_resamples": 10000
+    },
+    "low_k4": {
+      "value": 3.6417,
+      "ci_low": 3.4583,
+      "ci_high": 3.8333,
+      "valid_resamples": 10000
+    }
+  },
+  "divergence": {
+    "events_low": 2,
+    "transitions_low": 360,
+    "rate_low": {
+      "value": 0.0056,
+      "ci_low": 0.0,
+      "ci_high": 0.0139,
+      "valid_resamples": 10000
+    },
+    "events_high": 4,
+    "transitions_high": 360,
+    "rate_high": {
+      "value": 0.0111,
+      "ci_low": 0.0,
+      "ci_high": 0.0278,
+      "valid_resamples": 10000
+    },
+    "gap_high_minus_low": {
+      "value": 0.0056,
+      "ci_low": -0.0056,
+      "ci_high": 0.0194,
+      "valid_resamples": 10000
+    }
+  },
+  "stall": {
+    "no_accept_rate_low": {
+      "value": 0.7688,
+      "ci_low": 0.7125,
+      "ci_high": 0.825,
+      "valid_resamples": 10000
+    },
+    "no_proposal_rate_low": {
+      "value": 0.0604,
+      "ci_low": 0.0312,
+      "ci_high": 0.0979,
+      "valid_resamples": 10000
+    },
+    "no_accept_rate_high": {
+      "value": 0.6417,
+      "ci_low": 0.5646,
+      "ci_high": 0.725,
+      "valid_resamples": 10000
+    },
+    "no_proposal_rate_high": {
+      "value": 0.0646,
+      "ci_low": 0.0292,
+      "ci_high": 0.1062,
+      "valid_resamples": 10000
+    },
+    "no_accept_gap_low_minus_high": {
+      "value": 0.1271,
+      "ci_low": 0.0708,
+      "ci_high": 0.1854,
+      "valid_resamples": 10000
+    }
+  },
+  "integrity": {
+    "llm_calls": 1176,
+    "llm_errors": 12,
+    "parse_failures": 274,
+    "empty_proposals": 32,
+    "no_proposal_rounds": 68,
+    "no_accept_rounds": 855,
+    "budget_exhausted_train": 150,
+    "budget_exhausted_eval": 178,
+    "no_plan_train": 3447,
+    "no_plan_eval": 3395,
+    "plan_calls": 12000,
+    "llm_seconds": 19116.4799,
+    "llm_error_msgs": {
+      "timed out": 12
+    }
+  },
+  "stop_rule": {
+    "job_order_definition": "rows sorted by per-row completion `timestamp` (UTC, 1 s); equals the domain-sequential schedule blocks->gripper->logistics, coverage ascending, seed 0..19 ascending",
+    "timestamp_order_equals_domain_sequential_schedule": true,
+    "timestamps_unique": true,
+    "first_timestamp": "2026-09-07T07:07:23Z",
+    "last_timestamp": "2026-09-07T13:08:28Z",
+    "rate_denominators": "per_run = field count summed over the half / number of runs in that half (pre-committed 'per run' rate); per_llm_call = same count / llm_calls in that half (secondary view); runs_with_any = number of runs with count > 0",
+    "pooled_first_vs_second_half": {
+      "n_first": 150,
+      "n_second": 150,
+      "parse_failures": {
+        "first_count": 36,
+        "first_per_run": 0.24,
+        "first_runs_with_any": 12,
+        "first_per_llm_call": 0.0606,
+        "second_count": 238,
+        "second_per_run": 1.5867,
+        "second_runs_with_any": 40,
+        "second_per_llm_call": 0.4089,
+        "rose_per_run": true,
+        "rose_per_llm_call": true
+      },
+      "llm_errors": {
+        "first_count": 1,
+        "first_per_run": 0.0067,
+        "first_runs_with_any": 1,
+        "first_per_llm_call": 0.0017,
+        "second_count": 11,
+        "second_per_run": 0.0733,
+        "second_runs_with_any": 6,
+        "second_per_llm_call": 0.0189,
+        "rose_per_run": true,
+        "rose_per_llm_call": true
+      },
+      "empty_proposals": {
+        "first_count": 0,
+        "first_per_run": 0.0,
+        "first_runs_with_any": 0,
+        "first_per_llm_call": 0.0,
+        "second_count": 32,
+        "second_per_run": 0.2133,
+        "second_runs_with_any": 9,
+        "second_per_llm_call": 0.055,
+        "rose_per_run": true,
+        "rose_per_llm_call": true
+      },
+      "any_field_rose_per_run": true
+    },
+    "within_domain": {
+      "blocks": {
+        "n_first": 50,
+        "n_second": 50,
+        "parse_failures": {
+          "first_count": 15,
+          "first_per_run": 0.3,
+          "first_runs_with_any": 5,
+          "first_per_llm_call": 0.0765,
+          "second_count": 15,
+          "second_per_run": 0.3,
+          "second_runs_with_any": 5,
+          "second_per_llm_call": 0.0758,
+          "rose_per_run": false,
+          "rose_per_llm_call": false
+        },
+        "llm_errors": {
+          "first_count": 1,
+          "first_per_run": 0.02,
+          "first_runs_with_any": 1,
+          "first_per_llm_call": 0.0051,
+          "second_count": 0,
+          "second_per_run": 0.0,
+          "second_runs_with_any": 0,
+          "second_per_llm_call": 0.0,
+          "rose_per_run": false,
+          "rose_per_llm_call": false
+        },
+        "empty_proposals": {
+          "first_count": 0,
+          "first_per_run": 0.0,
+          "first_runs_with_any": 0,
+          "first_per_llm_call": 0.0,
+          "second_count": 0,
+          "second_per_run": 0.0,
+          "second_runs_with_any": 0,
+          "second_per_llm_call": 0.0,
+          "rose_per_run": false,
+          "rose_per_llm_call": false
+        },
+        "any_field_rose_per_run": false
+      },
+      "gripper": {
+        "n_first": 50,
+        "n_second": 50,
+        "parse_failures": {
+          "first_count": 6,
+          "first_per_run": 0.12,
+          "first_runs_with_any": 2,
+          "first_per_llm_call": 0.03,
+          "second_count": 0,
+          "second_per_run": 0.0,
+          "second_runs_with_any": 0,
+          "second_per_llm_call": 0.0,
+          "rose_per_run": false,
+          "rose_per_llm_call": false
+        },
+        "llm_errors": {
+          "first_count": 0,
+          "first_per_run": 0.0,
+          "first_runs_with_any": 0,
+          "first_per_llm_call": 0.0,
+          "second_count": 0,
+          "second_per_run": 0.0,
+          "second_runs_with_any": 0,
+          "second_per_llm_call": 0.0,
+          "rose_per_run": false,
+          "rose_per_llm_call": false
+        },
+        "empty_proposals": {
+          "first_count": 0,
+          "first_per_run": 0.0,
+          "first_runs_with_any": 0,
+          "first_per_llm_call": 0.0,
+          "second_count": 0,
+          "second_per_run": 0.0,
+          "second_runs_with_any": 0,
+          "second_per_llm_call": 0.0,
+          "rose_per_run": false,
+          "rose_per_llm_call": false
+        },
+        "any_field_rose_per_run": false
+      },
+      "logistics": {
+        "n_first": 50,
+        "n_second": 50,
+        "parse_failures": {
+          "first_count": 120,
+          "first_per_run": 2.4,
+          "first_runs_with_any": 19,
+          "first_per_llm_call": 0.6122,
+          "second_count": 118,
+          "second_per_run": 2.36,
+          "second_runs_with_any": 21,
+          "second_per_llm_call": 0.6344,
+          "rose_per_run": false,
+          "rose_per_llm_call": true
+        },
+        "llm_errors": {
+          "first_count": 11,
+          "first_per_run": 0.22,
+          "first_runs_with_any": 6,
+          "first_per_llm_call": 0.0561,
+          "second_count": 0,
+          "second_per_run": 0.0,
+          "second_runs_with_any": 0,
+          "second_per_llm_call": 0.0,
+          "rose_per_run": false,
+          "rose_per_llm_call": false
+        },
+        "empty_proposals": {
+          "first_count": 15,
+          "first_per_run": 0.3,
+          "first_runs_with_any": 4,
+          "first_per_llm_call": 0.0765,
+          "second_count": 17,
+          "second_per_run": 0.34,
+          "second_runs_with_any": 5,
+          "second_per_llm_call": 0.0914,
+          "rose_per_run": true,
+          "rose_per_llm_call": true
+        },
+        "any_field_rose_per_run": true
+      }
+    }
+  }
+}

@@ -1,12 +1,20 @@
 # Reproducibility Artifact — nemo-plan-repair-coverage
 
-**Venue:** NEmo — Neuro-Symbolic Embodied Intelligence, NeurIPS 2026 (Workshop).
-Double-blind submission.
+**Paper:** *Recursive World-Model Self-Repair in PDDL Domains: Verifier Coverage Is the
+Binding Constraint, and Under-Verified Loops Stall Rather Than Diverge.*
+Enrique Zueco, David Scott Lewis, Haley Yi (AIXC Research).
 
-**Anonymous release.** This repository holds the reproducibility artifacts for one
-double-blind submission. Absolute paths have been replaced by placeholders
-(`<REPO_ROOT>`, `<HOME>`) and identifying strings removed. The manuscript itself
+**Venue:** NEmo — Neuro-Symbolic Embodied Intelligence, NeurIPS 2026 (Workshop), poster.
+
+This repository holds the reproducibility artifacts for the paper. Absolute paths have
+been replaced by placeholders (`<REPO_ROOT>`, `<HOME>`). The manuscript itself
 (`main.tex` / `main.pdf`) is not part of this repository.
+
+**Camera-ready addition.** `analysis/llm_full_excluded_camera_ready.py` recomputes,
+from the raw records in `evidence/runs_llm_full/`, the descriptive table the paper's
+appendix reports for the full-parity LLM-proposer grid (A11), and writes
+`evidence/llm_full_excluded_camera_ready.json`. That grid was excluded by its
+pre-committed contamination stop-rule; no claim in the paper rests on it.
 
 ---
 
